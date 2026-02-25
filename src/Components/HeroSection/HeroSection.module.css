@@ -1,0 +1,72 @@
+.wrapper {
+    background-color: var(--background-color-elevated);
+    padding-top: 3rem;
+}
+
+.contentContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.imageArea {
+    width: 8rem;
+    margin: auto;
+}
+
+.textArea {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+/* break on big screan är en radbrytning som bara används  när vi går till stor skärm */
+.breakOnBigScreen {
+    display: none
+}
+
+/* tablet och uppåt */
+@media (min-width: 426px) {
+
+    .imageArea {
+        width: 10rem;
+    }
+
+    .textArea p {
+        max-width: 450px;
+
+    }
+}
+
+
+
+/* desktop och upp */
+@media (min-width: 769px) {
+    .contentContainer {
+        grid-template-columns: auto auto;
+        gap: 5rem;
+        align-items: center;
+    }
+
+    .imageArea {
+        max-width: 15rem;
+        width: unset;
+        margin: unset;
+        margin-left: auto;
+    }
+
+    .textArea {
+        text-align: left;
+        align-items: start;
+        justify-content: center;
+    }
+
+
+    .breakOnBigScreen {
+        display: block
+    }
+}

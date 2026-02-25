@@ -27,7 +27,7 @@ export default function HeroSection() {
                     </h1>
                     <p> Som nyutbildad utvecklare med fokus på frontend ser jag nu fram emot att äntligen börja jobba och utveckla(s) tillsammans med er.</p>
 
-                    <button>Mer om mig</button>
+                    <button className='btn-primary'>Mer om mig</button>
                 </div>
             </div>
         </div>

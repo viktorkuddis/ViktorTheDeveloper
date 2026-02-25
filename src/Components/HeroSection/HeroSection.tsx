@@ -3,8 +3,9 @@ import ImageContainer from '../ImageContainer/ImageContainer'
 import styles from './HeroSection.module.css'
 
 import profilePic from "@/assets/ViktorMagnussonCompressed.jpg";
+import { ArrowRight } from 'lucide-react';
 
-
+<ArrowRight />
 
 export default function HeroSection() {
     return (
@@ -27,7 +28,18 @@ export default function HeroSection() {
                     </h1>
                     <p> Som nyutbildad utvecklare med fokus på frontend ser jag nu fram emot att äntligen börja jobba och utveckla(s) tillsammans med er.</p>
 
-                    <button className='btn-primary'>Mer om mig</button>
+                    <button className='btn-primary'
+                        style={{
+                            marginTop: "0.5rem",
+                            display: "flex",
+                            flexDirection: "row",
+                            gap: "0.75rem",
+                            alignItems: "center"
+                        }}>
+                        <span>Mer om mig</span>
+                        <ArrowRight style={{ height: "1rem", width: "1rem" }} />
+
+                    </button>
                 </div>
             </div>
         </div>

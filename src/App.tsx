@@ -11,6 +11,7 @@ import Footer from './Components/Footer/Footer'
 import HeroSection from './Components/HeroSection/HeroSection'
 import NavBar from './Components/NavBar/NavBar'
 import ProjectsSection from './Components/ProjectsSection/ProjectsSection'
+import { ArrowRight, Mail } from 'lucide-react'
 
 function App() {
 
@@ -18,8 +19,8 @@ function App() {
   return (
     <>
       {/* Detta är UI sample av de knappar som finns */}
-      {/* 
-      <div style={{ background: "lightblue" }}>
+
+      {/* <div style={{ background: "lightblue" }}>
         <br />
         <br />
 
@@ -59,8 +60,38 @@ function App() {
         <br />
         <br />
 
+      </div> */}
+
+
+      <div style={{ background: "var(--accent-color-effect)", padding: "0.5rem", margin: "1rem" }}>
+        <button className='btn-secondary-inverted'
+          style={{
+            marginTop: "0.5rem",
+            display: "flex",
+            flexDirection: "row",
+            gap: "0.75rem",
+            alignItems: "center"
+          }}>
+          <span>Mer om mig</span>
+          <ArrowRight style={{ height: "1rem", width: "1rem" }} />
+
+        </button>
+
       </div>
-       */}
+      <div style={{ background: "var(--accent-color-effect)", padding: "0.5rem", margin: "1rem", color: "white", display: "flex", gap: "2rem" }}>
+
+        <span className='headding-loud' style={{ color: "white" }}>KONTAKTA MIG</span>
+        <Mail />
+        <span className='headding-loud' style={{ color: "white" }}>KONTAKTA MIG</span>
+        <Mail /><span className='headding-loud' style={{ color: "white" }}>KONTAKTA MIG</span>
+        <Mail /><span className='headding-loud' style={{ color: "white" }}>KONTAKTA MIG</span>
+        <Mail /> <span className='headding-loud' style={{ color: "white" }}>KONTAKTA MIG</span>
+        <Mail />
+
+
+
+      </div >
+
 
 
       <NavBar />

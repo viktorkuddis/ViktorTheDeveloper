@@ -1,5 +1,8 @@
 
+import './GlobalVariables.css'
+import './Fonts.css'
 import './App.css'
+
 import AboutSection from './Components/AboutSection/AboutSection'
 import Banner from './Components/Banner/Banner'
 import ContactSection from './Components/ContactSection/ContactSection'

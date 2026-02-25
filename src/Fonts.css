@@ -1,0 +1,17 @@
+/* FONT FÖR ÖVERSKRIFTER */
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+
+/*  KÄLLA:
+https://fonts.google.com/specimen/Lilita+One?preview.text=CREATIVE%20WEB%20DEVELOPER&categoryFilters=Appearance:%2FTheme%2FBlobby&specimen.preview.text=CREATIVE+WEB+DEVELOPER
+
+    CSS TAGG FÖR ANVÄNDNING:
+    .class-namn {
+         font-family: "Lilita One", sans-serif;
+         font-weight: 400;
+         font-style: normal;
+    } 
+*/

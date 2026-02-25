@@ -1,6 +1,7 @@
 .wrapper {
     background-color: var(--background-color-elevated);
     padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .contentContainer {

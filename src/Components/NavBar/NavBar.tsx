@@ -1,5 +1,8 @@
 export default function NavBar() {
     return (
-        <p>DETTA ÄR NAVBAR</p>
+        <div className="content-container-width content-container-padding">
+            <p>DETTA ÄR NAVBAR</p>
+        </div>
+
     )
 }

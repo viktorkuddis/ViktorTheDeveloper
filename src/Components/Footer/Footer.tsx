@@ -1,6 +1,9 @@
 
 export default function Footer() {
     return (
-        <div>Footer</div>
+        <div className="content-container-width content-container-padding">
+            <div>Footer</div>
+
+        </div>
     )
 }

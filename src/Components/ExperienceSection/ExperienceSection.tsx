@@ -1,6 +1,8 @@
 
 export default function ExperienceSection() {
-    return (
+    return (<div className="content-container-width content-container-padding">
         <div>ExperienceSection</div>
+    </div>
+
     )
 }

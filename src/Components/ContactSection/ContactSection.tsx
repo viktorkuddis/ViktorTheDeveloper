@@ -1,6 +1,10 @@
 
 export default function ContactSection() {
     return (
-        <div>ContactSection</div>
+
+        <div className="content-container-width content-container-padding">
+            <div>ContactSection</div>
+
+        </div>
     )
 }

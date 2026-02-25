@@ -1,6 +1,9 @@
 
 export default function AboutSection() {
     return (
-        <div>AboutSection</div>
+        <div className="content-container-width content-container-padding">
+            <div>AboutSection</div>
+        </div>
+
     )
 }

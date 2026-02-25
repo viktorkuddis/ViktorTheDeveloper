@@ -1,6 +1,9 @@
 
 export default function Banner() {
     return (
-        <div>Banner</div>
+        <div className="content-container-width content-container-padding">
+            <div>Banner</div>
+        </div>
+
     )
 }

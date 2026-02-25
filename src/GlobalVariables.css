@@ -1,0 +1,12 @@
+:root {
+    --foreground-color-loud: #131313;
+    --foreground-color-regular: hsl(0, 0%, 40%);
+    --foreground-color-inverted: #ffffff;
+
+    --background-color-regular: #FAF9F5;
+
+    --background-color-elevated: #ffffff;
+
+    --accent-color-effect: #FF4960;
+    --accent-color-ui: #1B93FC;
+}

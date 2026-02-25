@@ -1,3 +1,7 @@
+.wrapper {
+    background-color: var(--background-color-elevated);
+}
+
 .container {
 
     display: flex;
@@ -11,7 +15,7 @@
 }
 
 .logo {
-    font-size: 2rem;
+    font-size: 1.25rem;
 }
 
 nav {
@@ -26,6 +30,15 @@ ul {
     justify-content: center;
 }
 
+/* tablet och uppåt */
+@media (min-width: 426px) {
+
+    .logo {
+        font-size: 1.5rem;
+    }
+}
+
+/* desktop och upp */
 @media (min-width: 769px) {
     ul {
         column-gap: 2rem;

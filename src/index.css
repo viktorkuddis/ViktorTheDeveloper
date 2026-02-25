@@ -31,8 +31,22 @@ a:hover {
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 2rem;
   line-height: 1.1;
+}
+
+/* tablet och upp */
+@media (min-width: 426px) {
+  h1 {
+    font-size: 2.3rem;
+  }
+}
+
+/* desktop och upp */
+@media (min-width: 769px) {
+  h1 {
+    font-size: 4rem;
+  }
 }
 
 .headding-loud {
@@ -65,11 +79,14 @@ h1 {
   padding: 0.5rem 1rem;
 }
 
+/* tablet */
 @media (min-width: 426px) {
   .content-container-padding {
-    padding: 1rem 2rem;
+    padding: 0.5rem 2rem;
   }
 }
+
+
 
 
 

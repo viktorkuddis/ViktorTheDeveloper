@@ -5,7 +5,8 @@
 
     --background-color-regular: #FAF9F5;
 
-    --background-color-elevated: #ffffff;
+    --background-color-elevated: var(--foreground-color-inverted);
+    --background-color-inverted: var(--foreground-color-loud);
 
     --accent-color-effect: #FF4960;
     --accent-color-ui: #1B93FC;

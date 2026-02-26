@@ -1,7 +1,16 @@
 .wrapper {
     background-color: var(--background-color-elevated);
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* desktop och upp */
+@media (min-width: 769px) {
+    .wrapper {
+
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
 }
 
 .contentContainer {

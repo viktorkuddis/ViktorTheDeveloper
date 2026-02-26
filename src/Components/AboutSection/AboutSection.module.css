@@ -1,0 +1,30 @@
+.contentContainer {
+    padding-top: 1rem;
+}
+
+.textContainer {
+    /* background-color: lightblue; */
+    padding-left: 5%;
+}
+
+/* tablet och upp */
+@media (min-width: 426px) {
+    .contentContainer {
+        padding-top: 3rem;
+    }
+
+    .textContainer {
+        padding-left: 10%;
+    }
+}
+
+/* desktop och upp */
+@media (min-width: 769px) {
+    .contentContainer {
+        padding-top: 5rem;
+    }
+
+    .textContainer {
+        padding-left: 15%;
+    }
+}

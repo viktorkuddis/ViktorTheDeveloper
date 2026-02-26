@@ -1,0 +1,71 @@
+.bannerContainer {
+
+    --bannerHeight: 3.5rem;
+
+    /* border: 1px solid black; */
+    /* background-color: lightblue; */
+    height: var(--bannerHeight);
+    position: relative;
+    isolation: isolate;
+}
+
+.underBanner,
+.frontBanner {
+    height: var(--bannerHeight);
+    position: absolute;
+    /* detta är för att centrera i sidled */
+    width: calc(100vw + 10rem);
+    left: -5rem;
+}
+
+.underBanner {
+    background-color: var(--background-color-inverted);
+
+    top: 50%;
+    transform: translateY(-50%) rotate(3deg);
+    z-index: 1;
+
+}
+
+.frontBanner {
+    background-color: var(--accent-color-effect);
+    display: flex;
+    flex-direction: row;
+    /* gap finns i markup */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    top: 50%;
+    transform: translateY(-50%) rotate(-3deg);
+    z-index: 2;
+}
+
+.frontBanner div {
+    flex-shrink: 0;
+}
+
+
+/* tablet och upp */
+@media (min-width: 426px) {
+    .bannerContainer {
+        transform: scale(115%);
+    }
+}
+
+/* desktop och upp */
+@media (min-width: 769px) {
+    .bannerContainer {
+        transform: scale(135%);
+    }
+
+    .underBanner {
+        transform: translateY(-50%) rotate(2deg);
+    }
+
+    .frontBanner {
+        transform: translateY(-50%) rotate(-2deg);
+
+    }
+
+}

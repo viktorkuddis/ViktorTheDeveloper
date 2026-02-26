@@ -1,0 +1,54 @@
+.wrapper {
+    background-color: var(--background-color-elevated);
+}
+
+.container {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+
+
+}
+
+.logo {
+    font-size: 1.25rem;
+}
+
+nav {
+    flex-grow: 1;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* tablet och uppåt */
+@media (min-width: 426px) {
+
+    .logo {
+        font-size: 1.5rem;
+    }
+}
+
+/* desktop och upp */
+@media (min-width: 769px) {
+    ul {
+        column-gap: 2rem;
+    }
+}
+
+li {
+    all: unset;
+
+    a {
+        all: unset;
+    }
+}

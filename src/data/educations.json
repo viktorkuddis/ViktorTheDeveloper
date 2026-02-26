@@ -1,0 +1,16 @@
+[
+    {
+        "examen": "Yrkeshögskoleexamen",
+        "utbildning": "Fullstackutvecklare JavaScript",
+        "school": "Chas Academy",
+        "time": "Augusti 2023 – Juni 2025",
+        "image": "/images/chas.png"
+    },
+    {
+        "examen": "Filosofie kandidatexamen",
+        "utbildning": "Medie- och kommunikationsvetenskap, inriktning journalistik och medier, radio",
+        "school": "Luleå tekniska universitet",
+        "time": "Augusti 2017 – Juni 2020",
+        "image": "/images/ltu.jpg"
+    }
+]

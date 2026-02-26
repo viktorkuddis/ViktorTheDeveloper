@@ -7,6 +7,62 @@
     padding-left: 5%;
 }
 
+.skillsAndEducations {
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+
+    h3 {
+        color: var(--foreground-color-loud);
+    }
+
+    ul {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    ul li {
+        list-style: none;
+    }
+
+}
+
+
+
+.educations {
+    line-height: normal;
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+    /* background-color: aqua; */
+    padding-top: 1.5rem;
+
+
+    .imageContainer {
+        width: 3rem;
+        flex-shrink: 0;
+    }
+
+    li {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        /* background-color: aqua; */
+        max-width: 30rem;
+    }
+
+
+}
+
+.educationHeadding {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    /* background-color: aqua; */
+}
+
 /* tablet och upp */
 @media (min-width: 426px) {
     .contentContainer {
@@ -26,5 +82,12 @@
 
     .textContainer {
         padding-left: 15%;
+    }
+
+    .skillsAndEducations {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        gap: 4rem;
+
     }
 }

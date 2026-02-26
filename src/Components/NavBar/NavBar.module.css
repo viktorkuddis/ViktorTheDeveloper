@@ -22,7 +22,7 @@ nav {
     flex-grow: 1;
 }
 
-ul {
+nav ul {
     display: flex;
     flex-direction: row;
     column-gap: 1rem;
@@ -40,12 +40,12 @@ ul {
 
 /* desktop och upp */
 @media (min-width: 769px) {
-    ul {
+    nav ul {
         column-gap: 2rem;
     }
 }
 
-li {
+nav ul li {
     all: unset;
 
     a {

@@ -7,6 +7,13 @@ import educationsdata from "@/data/educations.json"
 import ImageContainer from "../ImageContainer/ImageContainer"
 
 const favSkills: string[] = skills.favSkills;
+
+const skillsMap: {
+    title: string,
+    uid: string,
+    imgSrc: string
+}[] = skills.skillsMap;
+
 const educations: { [key: string]: string }[] = educationsdata;
 
 
@@ -19,11 +26,11 @@ export default function AboutSection() {
                 <p>{aboutText.text} </p>
 
                 <div className={`${styles.skillsAndEducations}`}>
-                    <section >
+                    <section style={{ flexGrow: "1" }}>
                         <h3>
                             Utbildningar
                         </h3>
-                        <ul className={`${styles.educations}`} style={{
+                        <ul className={`${styles.educationsList}`} style={{
 
 
                         }}>
@@ -44,17 +51,25 @@ export default function AboutSection() {
                                 </li>))}
                         </ul>
                     </section>
-                    <section style={{ flexShrink: "0", flexGrow: "1" }}>
+                    <section style={{ flexShrink: "0", flexGrow: "2" }}>
                         <h3 >
                             Jag jobbar gärna med...
                         </h3>
-                        <ul>
-                            {favSkills.map((skill, i) => (<li key={i}>{skill}</li>))}
+                        <ul className={`${styles.preferedSkillsList}`}>
+                            {favSkills.map((favSkill, i) => {
+                                const skill = skillsMap.find((item) => favSkill == item.uid)
+                                if (!skill) return null;
+                                return (
+                                    <li key={i}>
+                                        {skill?.imgSrc
+                                            ? <img src={skill?.imgSrc} alt="" />
+                                            : <div className={`${styles.placeholderImg}`}></div>}
+                                        {skill?.title}
+                                    </li>)
+                            })}
                         </ul>
+
                     </section>
-
-
-
 
                 </div>
 

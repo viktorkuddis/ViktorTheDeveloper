@@ -57,7 +57,7 @@
         {
             "title": "HTML",
             "uid": "BE9E4470-F5A5-4E20-AF05-4483F68C48F0",
-            "imgSrc": "public/images/HTML5.png"
+            "imgSrc": "/images/HTML5.png"
         },
         {
             "title": "MongoDB",

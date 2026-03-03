@@ -31,8 +31,41 @@
 }
 
 
+.preferedSkillsList {
+    /* background-color: aqua; */
+    padding-top: 1rem;
 
-.educations {
+    --iconheight: 1.1rem;
+
+
+    li {
+        /* background-color: aqua; */
+        /* border: 0.5px solid black; */
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        line-height: 1.6rem;
+    }
+
+    li img {
+        height: var(--iconheight);
+        aspect-ratio: 1/1;
+    }
+
+    .placeholderImg {
+        background-color: var(--foreground-color-regular);
+        opacity: 0.33;
+        /* storleken ska va lite mindre än ikonen för att inte sticka ut så mycket. padding på sidorna kompenserar för den lite mindre bredden. */
+        height: calc(var(--iconheight) - 0.2rem);
+        margin-left: 0.1rem;
+        margin-right: 0.1rem;
+        aspect-ratio: 1/1;
+        border-radius: 0.25rem;
+
+    }
+}
+
+.educationsList {
     line-height: normal;
     display: flex;
     gap: 1.5rem;

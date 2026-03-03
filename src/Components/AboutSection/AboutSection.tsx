@@ -26,7 +26,7 @@ export default function AboutSection() {
                 <p>{aboutText.text} </p>
 
                 <div className={`${styles.skillsAndEducations}`}>
-                    <section >
+                    <section style={{ flexGrow: "1" }}>
                         <h3>
                             Utbildningar
                         </h3>
@@ -51,7 +51,7 @@ export default function AboutSection() {
                                 </li>))}
                         </ul>
                     </section>
-                    <section style={{ flexShrink: "0", flexGrow: "1" }}>
+                    <section style={{ flexShrink: "0", flexGrow: "2" }}>
                         <h3 >
                             Jag jobbar gärna med...
                         </h3>

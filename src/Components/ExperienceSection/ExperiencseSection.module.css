@@ -2,16 +2,22 @@
     background-color: var(--background-color-inverted);
     color: var(--foreground-color-inverted-muted);
 
-    padding: 2rem 0rem;
+    padding-bottom: 2rem;
 }
 
+.heading {
+    text-align: start;
+}
 
 /* tablet och upp */
 @media (min-width: 426px) {
     .experienceSection {
+        padding-top: 1.5rem;
+        padding-bottom: 3rem;
+    }
 
-
-        padding: 3rem 0rem;
+    .heading {
+        text-align: center;
     }
 }
 
@@ -19,6 +25,8 @@
 @media (min-width: 769px) {
     .experienceSection {
 
-        padding: 4rem 0rem;
+        padding: 2rem 0rem;
+        padding-bottom: 4rem;
+
     }
 }

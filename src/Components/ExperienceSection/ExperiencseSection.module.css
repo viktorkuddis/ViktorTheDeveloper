@@ -1,0 +1,24 @@
+.experienceSection {
+    background-color: var(--background-color-inverted);
+    color: var(--foreground-color-inverted-muted);
+
+    padding: 2rem 0rem;
+}
+
+
+/* tablet och upp */
+@media (min-width: 426px) {
+    .experienceSection {
+
+
+        padding: 3rem 0rem;
+    }
+}
+
+/* desktop och upp */
+@media (min-width: 769px) {
+    .experienceSection {
+
+        padding: 4rem 0rem;
+    }
+}

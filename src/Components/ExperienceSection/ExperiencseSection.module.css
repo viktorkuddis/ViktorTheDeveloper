@@ -1,6 +1,6 @@
 .experienceSection {
     background-color: var(--background-color-inverted);
-    color: var(--foreground-color-inverted-muted);
+    color: var(--foreground-color-inverted-regular);
 
     padding-bottom: 2rem;
 }

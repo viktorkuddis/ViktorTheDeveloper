@@ -89,8 +89,8 @@ p {
 }
 
 .headding-loud-inverted {
-  color: var(--foreground-color-inverted);
-  -webkit-text-stroke-color: var(--foreground-color-inverted);
+  color: var(--foreground-color-inverted-loud);
+  -webkit-text-stroke-color: var(--foreground-color-inverted-loud);
   -webkit-text-stroke-width: 1px;
   font-family: "Lilita One", sans-serif;
   font-weight: 400;
@@ -132,11 +132,11 @@ button {
 
 .btn-primary {
   background-color: var(--accent-color-ui);
-  color: var(--foreground-color-inverted);
+  color: var(--foreground-color-inverted-loud);
 
   &:hover {
-    background-color: color-mix(in srgb, var(--accent-color-ui) 90%, var(--foreground-color-inverted) 10%);
-    text-shadow: 0px 0px 1px var(--foreground-color-inverted);
+    background-color: color-mix(in srgb, var(--accent-color-ui) 90%, var(--foreground-color-inverted-loud) 10%);
+    text-shadow: 0px 0px 1px var(--foreground-color-inverted-loud);
   }
 
   &:active {
@@ -172,20 +172,20 @@ button {
 }
 
 .btn-primary-inverted {
-  background-color: var(--foreground-color-inverted);
+  background-color: var(--foreground-color-inverted-loud);
   color: var(--foreground-color-loud);
 
   &:hover {
-    background-color: color-mix(in srgb, var(--foreground-color-inverted) 97%, var(--foreground-color-loud) 3%);
+    background-color: color-mix(in srgb, var(--foreground-color-inverted-loud) 97%, var(--foreground-color-loud) 3%);
     text-shadow: 0px 0px 1px var(--foreground-color-loud);
   }
 
   &:active {
-    background-color: color-mix(in srgb, var(--foreground-color-inverted) 92%, var(--foreground-color-loud) 8%);
+    background-color: color-mix(in srgb, var(--foreground-color-inverted-loud) 92%, var(--foreground-color-loud) 8%);
   }
 
   &:focus-visible {
-    outline: 2px solid var(--foreground-color-inverted);
+    outline: 2px solid var(--foreground-color-inverted-loud);
     outline-offset: 2px;
   }
 
@@ -193,20 +193,20 @@ button {
 
 .btn-secondary-inverted {
   background-color: transparent;
-  color: var(--foreground-color-inverted);
-  border: 1px solid var(--foreground-color-inverted);
+  color: var(--foreground-color-inverted-loud);
+  border: 1px solid var(--foreground-color-inverted-loud);
 
   &:hover {
-    background-color: color-mix(in srgb, transparent 95%, var(--foreground-color-inverted) 5%);
-    text-shadow: 0px 0px 1px var(--foreground-color-inverted);
+    background-color: color-mix(in srgb, transparent 95%, var(--foreground-color-inverted-loud) 5%);
+    text-shadow: 0px 0px 1px var(--foreground-color-inverted-loud);
   }
 
   &:active {
-    background-color: color-mix(in srgb, transparent 85%, var(--foreground-color-inverted) 15%);
+    background-color: color-mix(in srgb, transparent 85%, var(--foreground-color-inverted-loud) 15%);
   }
 
   &:focus-visible {
-    outline: 2px solid var(--foreground-color-inverted);
+    outline: 2px solid var(--foreground-color-inverted-loud);
     outline-offset: 2px;
   }
 

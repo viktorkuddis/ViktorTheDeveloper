@@ -1,5 +1,18 @@
 [
     {
+        "title": "Din nästa kollega",
+        "company": "",
+        "city": "Stockholm",
+        "country": "Sverige",
+        "period": "Nu",
+        "isCurrent": true,
+        "isHighlighted": true,
+        "descriptionText": "Söker nu mitt förtsta jobb som utvecklare där jag kan få användning för mina nyförvärvade kunskaper samt lära mig massor av nya spännande saker. Kanske blir det hos just dig!?",
+        "descriptionBulletPoints": [
+            "Junior Frontendutvecklare eller Fullstackutvecklare med fokus på Frontend"
+        ]
+    },
+    {
         "title": "Praktik som utvecklare på Sveriges Radio Play",
         "company": "Sveriges Radio",
         "city": "Stockholm",
@@ -7,7 +20,7 @@
         "period": "Januari 2025 – Maj 2025",
         "isCurrent": false,
         "isHighlighted": true,
-        "descriptionText": " gjorde praktik på sveriges radio PLAY där jag var del av ett tvärfunktionellt team poch fick känna på hur det var att göra produkt i hela kedjan. testade öven att. vara i andra team ",
+        "descriptionText": "",
         "descriptionBulletPoints": [
             "Arbetade agilt enligt Scrum och med mobprogrammering",
             "Skapade och vidareutvecklade komponenter och gränssnitt i Next.js enligt designmallar för webbplatsen samt integrerat via webbvyer i företagets native appar",
@@ -23,11 +36,7 @@
         "isCurrent": false,
         "isHighlighted": false,
         "descriptionText": "",
-        "descriptionBulletPoints": [
-            "Arbetade agilt enligt Scrum och med mobprogrammering",
-            "Skapade och vidareutvecklade komponenter och gränssnitt i Next.js enligt designmallar för webbplatsen samt integrerat via webbvyer i företagets native appar",
-            "Fick grundläggande insikt i API-utveckling på .NET-plattformen"
-        ]
+        "descriptionBulletPoints": []
     },
     {
         "title": "Programledare och Livereporter, P4 Sörmland",

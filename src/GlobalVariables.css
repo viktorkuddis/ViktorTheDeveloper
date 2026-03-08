@@ -5,14 +5,14 @@
     --foreground-color-regular: hsl(0, 0%, 40%);
 
     --background-color-regular: #FAF9F5;
-    --background-color-elevated: var(--foreground-color-inverted);
+    --background-color-elevated: var(--foreground-color-inverted-loud);
 
     --accent-color-effect: #FF4960;
     --accent-color-ui: #1B93FC;
 
     /* inverted */
-    --foreground-color-inverted: white;
-    --foreground-color-inverted-muted: color-mix(in srgb, var(--foreground-color-inverted) 80%, var(--background-color-inverted)28%);
+    --foreground-color-inverted-loud: white;
+    --foreground-color-inverted-regular: color-mix(in srgb, var(--foreground-color-inverted-loud) 85%, var(--background-color-inverted)15%);
 
     --background-color-inverted: var(--foreground-color-loud);
 

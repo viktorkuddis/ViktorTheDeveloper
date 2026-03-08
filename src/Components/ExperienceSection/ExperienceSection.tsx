@@ -30,7 +30,9 @@ export default function ExperienceSection() {
                     isCurrent={ex.isCurrent}
                     isHighlighted={ex.isHighlighted}
                     descriptionText={ex.descriptionText}
-                    descriptionBulletPoints={ex.descriptionBulletPoints} />
+                    descriptionBulletPoints={ex.descriptionBulletPoints}
+                    isOldestItemInTimeLine={i == experiences.length - 1 ? true : false}
+                />
 
             </div>))}
 

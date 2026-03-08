@@ -3,6 +3,8 @@ import styles from "./ExperiencseSection.module.css"
 import expreriences from "@/data/experiences.json"
 import TimeLineSlot from "./TimeLineSlot/TimeLineSlot"
 
+
+
 import type { ExperienceType } from "../../types/types"
 
 const experiences: ExperienceType[] = expreriences

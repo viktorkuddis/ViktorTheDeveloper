@@ -7,10 +7,10 @@
         "period": "Januari 2025 – Maj 2025",
         "isCurrent": false,
         "isHighlighted": true,
-        "descriptionText": "",
+        "descriptionText": " gjorde praktik på sveriges radio PLAY där jag var del av ett tvärfunktionellt team poch fick känna på hur det var att göra produkt i hela kedjan. testade öven att. vara i andra team ",
         "descriptionBulletPoints": [
             "Arbetade agilt enligt Scrum och med mobprogrammering",
-            "Vidareutvecklade komponenter och gränssnitt i Next.js enligt designmallar, integrerat via webbvyer i företagets native appar",
+            "Skapade och vidareutvecklade komponenter och gränssnitt i Next.js enligt designmallar för webbplatsen samt integrerat via webbvyer i företagets native appar",
             "Fick grundläggande insikt i API-utveckling på .NET-plattformen"
         ]
     },
@@ -21,9 +21,13 @@
         "country": "Sverige",
         "period": "Juli 2024 – Augusti 2024",
         "isCurrent": false,
-        "isHighlighted": true,
+        "isHighlighted": false,
         "descriptionText": "",
-        "descriptionBulletPoints": []
+        "descriptionBulletPoints": [
+            "Arbetade agilt enligt Scrum och med mobprogrammering",
+            "Skapade och vidareutvecklade komponenter och gränssnitt i Next.js enligt designmallar för webbplatsen samt integrerat via webbvyer i företagets native appar",
+            "Fick grundläggande insikt i API-utveckling på .NET-plattformen"
+        ]
     },
     {
         "title": "Programledare och Livereporter, P4 Sörmland",
@@ -49,7 +53,7 @@
     },
     {
         "title": "Producent och Redaktör, Rix FM och Star FM",
-        "company": "Nordic Entertainment Group",
+        "company": "Nordic Entertainment Group / Viaplay",
         "city": "Stockholm",
         "country": "Sverige",
         "period": "Juli 2020 – December 2021",
@@ -60,7 +64,7 @@
     },
     {
         "title": "Praktik, Rix FM",
-        "company": "Nordic Entertainment Group",
+        "company": "Nordic Entertainment Group / Viaplay",
         "city": "Stockholm",
         "country": "Sverige",
         "period": "November 2019 – Januari 2020",

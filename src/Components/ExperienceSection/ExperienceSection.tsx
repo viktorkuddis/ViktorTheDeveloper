@@ -1,7 +1,18 @@
 
 import styles from "./ExperiencseSection.module.css"
+import expreriences from "@/data/experiences.json"
+import TimeLineSlot from "./TimeLineSlot/TimeLineSlot"
+
+import type { ExperienceType } from "../../types/types"
+
+const experiences: ExperienceType[] = expreriences
+
 
 export default function ExperienceSection() {
+
+    {/* Här byggs på med komponenter för varje erfarenhet.
+            Den är blå om den är current true.
+            För enlast sortering = Det staplas i den ordning den ligger i arrayen. Inte enligt tid. */}
 
     return (<section className={`${styles.experienceSection}`}>
         <div className="content-container-width content-container-padding">
@@ -9,10 +20,24 @@ export default function ExperienceSection() {
                 ERFARENHET
             </h2>
 
+            {experiences.map((ex, i) => (<div key={i}>
 
-            Här byggs på med komponenter för varje erfarenhet.
-            Den är blå om den är current true.
-            För enlast sortering = Det staplas i den ordning den ligger i arrayen. Inte enligt tid.
+                <TimeLineSlot title={ex.title}
+                    company={ex.company}
+                    city={ex.city}
+                    country={ex.country}
+                    period={ex.period}
+                    isCurrent={ex.isCurrent}
+                    isHighlighted={ex.isHighlighted}
+                    descriptionText={ex.descriptionText}
+                    descriptionBulletPoints={ex.descriptionBulletPoints} />
+
+            </div>))}
+
+
+
+
+
         </div >
     </section >
 

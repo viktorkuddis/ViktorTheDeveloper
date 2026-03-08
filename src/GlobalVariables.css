@@ -12,7 +12,7 @@
 
     /* inverted */
     --foreground-color-inverted: white;
-    --foreground-color-inverted-muted: color-mix(in srgb, var(--foreground-color-inverted) 80%, var(--background-color-inverted)20%);
+    --foreground-color-inverted-muted: color-mix(in srgb, var(--foreground-color-inverted) 80%, var(--background-color-inverted)28%);
 
     --background-color-inverted: var(--foreground-color-loud);
 

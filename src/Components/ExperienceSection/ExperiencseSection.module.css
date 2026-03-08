@@ -1,0 +1,36 @@
+.experienceSection {
+    background-color: var(--background-color-inverted);
+    color: var(--foreground-color-inverted-regular);
+
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+}
+
+.heading {
+    text-align: start;
+    /* background-color: green; */
+    padding-bottom: 1rem;
+}
+
+/* tablet och upp */
+@media (min-width: 426px) {
+    .experienceSection {
+        padding-top: 1.5rem;
+        padding-bottom: 3rem;
+    }
+
+    .heading {
+        text-align: center;
+        padding-bottom: 3rem;
+    }
+}
+
+/* desktop och upp */
+@media (min-width: 769px) {
+    .experienceSection {
+
+        padding: 2rem 0rem;
+        padding-bottom: 4rem;
+
+    }
+}

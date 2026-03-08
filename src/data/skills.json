@@ -1,0 +1,113 @@
+{
+    "allSkills": "Frontend, JavaScript (Vanilla), JavaScript (ES6+), TypeScript, React, React.js, CSS, HTML, Next, Next.js, Storybook, Tailwind, Bootstrap, Vue, Vue.js, Express, MongoDB, Mongoose, NoSQL, Node, Node.js, Fullstack, REST API, JSON, ASP.NET Core Web API, Clerk (Fullstack Authentication), shadcn/ui, SQL, Agila metoder, Agile methodologies, Mobbprogrammering, Mob programming, Scrum, Figma, Git, GitHub, GitHub Projects, Jira, Notion, Windows, macOS",
+    "favSkills": [
+        "Frontend",
+        "React",
+        "Next",
+        "Typescript",
+        "CSS",
+        "Tailwind",
+        "HTML",
+        "MongoDb",
+        "Scrum",
+        "Github",
+        "CFD4D3E3-41E3-40D8-A739-64B7B18345E2",
+        "BCC4D2F8-617E-4649-990A-E4FF27345A89",
+        "F3C5E758-D00A-46F1-95B7-EAF566485F16",
+        "88AFFEDD-BC20-4FC6-813C-C71E37BB5688",
+        "449BA04F-1AD6-413C-B38A-2EFEED8DA053",
+        "39F9E43C-7D3C-4A15-B526-BD0D6EC6D64A",
+        "287926F4-DD74-4EF7-9139-2B9DCB4B0B27",
+        "BE9E4470-F5A5-4E20-AF05-4483F68C48F0",
+        "C9DFB7AE-ABDD-4C75-9DB9-153F91DE5F4D",
+        "79F2CC78-43F3-439F-A015-D55A5F12DBDC",
+        "5543F5FF-8301-4F95-8F12-3EB2BD57DAFC"
+    ],
+    "skillsMap": [
+        {
+            "title": "React",
+            "uid": "F3C5E758-D00A-46F1-95B7-EAF566485F16",
+            "imgSrc": "/images/React.png"
+        },
+        {
+            "title": "Next",
+            "uid": "88AFFEDD-BC20-4FC6-813C-C71E37BB5688",
+            "imgSrc": "/images/Next.jpeg"
+        },
+        {
+            "title": "Frontend",
+            "uid": "CFD4D3E3-41E3-40D8-A739-64B7B18345E2",
+            "imgSrc": ""
+        },
+        {
+            "title": "TypeScript",
+            "uid": "449BA04F-1AD6-413C-B38A-2EFEED8DA053",
+            "imgSrc": "/images/TypeScript.png"
+        },
+        {
+            "title": "CSS",
+            "uid": "39F9E43C-7D3C-4A15-B526-BD0D6EC6D64A",
+            "imgSrc": "/images/Css.png"
+        },
+        {
+            "title": "Tailwind",
+            "uid": "287926F4-DD74-4EF7-9139-2B9DCB4B0B27",
+            "imgSrc": "/images/Tailwind.png"
+        },
+        {
+            "title": "HTML",
+            "uid": "BE9E4470-F5A5-4E20-AF05-4483F68C48F0",
+            "imgSrc": "/images/HTML5.png"
+        },
+        {
+            "title": "MongoDB",
+            "uid": "C9DFB7AE-ABDD-4C75-9DB9-153F91DE5F4D",
+            "imgSrc": "/images/MongoDB.png"
+        },
+        {
+            "title": "Scrum ",
+            "uid": "79F2CC78-43F3-439F-A015-D55A5F12DBDC",
+            "imgSrc": "/images/Scrum.png"
+        },
+        {
+            "title": "Git / GitHub",
+            "uid": "5543F5FF-8301-4F95-8F12-3EB2BD57DAFC",
+            "imgSrc": "/images/Git.png"
+        },
+        {
+            "title": "JavaScript",
+            "uid": "BCC4D2F8-617E-4649-990A-E4FF27345A89",
+            "imgSrc": "/images/JavaScript.png"
+        },
+        {
+            "title": "",
+            "uid": "",
+            "imgSrc": ""
+        },
+        {
+            "title": "",
+            "uid": "",
+            "imgSrc": ""
+        },
+        {
+            "title": "",
+            "uid": "",
+            "imgSrc": ""
+        },
+        {
+            "title": "",
+            "uid": "",
+            "imgSrc": ""
+        },
+        {
+            "title": "",
+            "uid": "",
+            "imgSrc": ""
+        },
+        {
+            "title": "",
+            "uid": "",
+            "imgSrc": ""
+        }
+    ]
+}

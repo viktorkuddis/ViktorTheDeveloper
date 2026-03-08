@@ -1,14 +1,22 @@
 :root {
+
+    /* std */
     --foreground-color-loud: #131313;
     --foreground-color-regular: hsl(0, 0%, 40%);
-    --foreground-color-inverted: #ffffff;
 
     --background-color-regular: #FAF9F5;
-
-    --background-color-elevated: var(--foreground-color-inverted);
-    --background-color-inverted: var(--foreground-color-loud);
+    --background-color-elevated: var(--foreground-color-inverted-loud);
 
     --accent-color-effect: #FF4960;
     --accent-color-ui: #1B93FC;
+
+    /* inverted */
+    --foreground-color-inverted-loud: white;
+    --background-color-inverted: var(--foreground-color-loud);
+
+    --foreground-color-inverted-regular: color-mix(in srgb, var(--foreground-color-inverted-loud) 80%, var(--background-color-inverted) 20%);
+
+
+
 
 }

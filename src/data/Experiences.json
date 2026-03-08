@@ -1,0 +1,72 @@
+[
+    {
+        "title": "Praktik som utvecklare på Sveriges Radio Play",
+        "company": "Sveriges Radio",
+        "city": "Stockholm",
+        "country": "Sverige",
+        "period": "Januari 2025 – Maj 2025",
+        "isCurrent": false,
+        "isHighlighted": true,
+        "descriptionText": "",
+        "descriptionBulletPoints": [
+            "Arbetade agilt enligt Scrum och med mobprogrammering",
+            "Vidareutvecklade komponenter och gränssnitt i Next.js enligt designmallar, integrerat via webbvyer i företagets native appar",
+            "Fick grundläggande insikt i API-utveckling på .NET-plattformen"
+        ]
+    },
+    {
+        "title": "Programledare, Vaken med P3 och P4",
+        "company": "Sveriges Radio",
+        "city": "Stockholm",
+        "country": "Sverige",
+        "period": "Juli 2024 – Augusti 2024",
+        "isCurrent": false,
+        "isHighlighted": true,
+        "descriptionText": "",
+        "descriptionBulletPoints": []
+    },
+    {
+        "title": "Programledare och Livereporter, P4 Sörmland",
+        "company": "Sveriges Radio",
+        "city": "Eskilstuna",
+        "country": "Sverige",
+        "period": "Januari 2023 – Mars 2023",
+        "isCurrent": false,
+        "isHighlighted": false,
+        "descriptionText": "",
+        "descriptionBulletPoints": []
+    },
+    {
+        "title": "Programledare, P4 Kronoberg",
+        "company": "Sveriges Radio",
+        "city": "Växjö",
+        "country": "Sverige",
+        "period": "Juni 2022 – Augusti 2022",
+        "isCurrent": false,
+        "isHighlighted": false,
+        "descriptionText": "",
+        "descriptionBulletPoints": []
+    },
+    {
+        "title": "Producent och Redaktör, Rix FM och Star FM",
+        "company": "Nordic Entertainment Group",
+        "city": "Stockholm",
+        "country": "Sverige",
+        "period": "Juli 2020 – December 2021",
+        "isCurrent": false,
+        "isHighlighted": false,
+        "descriptionText": "",
+        "descriptionBulletPoints": []
+    },
+    {
+        "title": "Praktik, Rix FM",
+        "company": "Nordic Entertainment Group",
+        "city": "Stockholm",
+        "country": "Sverige",
+        "period": "November 2019 – Januari 2020",
+        "isCurrent": false,
+        "isHighlighted": false,
+        "descriptionText": "",
+        "descriptionBulletPoints": []
+    }
+]

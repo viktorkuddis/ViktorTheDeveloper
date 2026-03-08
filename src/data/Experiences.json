@@ -1,0 +1,85 @@
+[
+    {
+        "title": "Din nästa kollega",
+        "company": "",
+        "city": "Stockholm",
+        "country": "Sverige",
+        "period": "Nu",
+        "isCurrent": true,
+        "isHighlighted": true,
+        "descriptionText": "Söker nu mitt förtsta jobb som utvecklare där jag kan få användning för mina nyförvärvade kunskaper samt lära mig massor av nya spännande saker. Kanske blir det hos just dig!?",
+        "descriptionBulletPoints": [
+            "Junior Frontendutvecklare eller Fullstackutvecklare med fokus på Frontend"
+        ]
+    },
+    {
+        "title": "Praktik som utvecklare på Sveriges Radio Play",
+        "company": "Sveriges Radio",
+        "city": "Stockholm",
+        "country": "Sverige",
+        "period": "Januari 2025 – Maj 2025",
+        "isCurrent": false,
+        "isHighlighted": true,
+        "descriptionText": "",
+        "descriptionBulletPoints": [
+            "Arbetade agilt enligt Scrum och med mobprogrammering",
+            "Skapade och vidareutvecklade komponenter och gränssnitt i Next.js enligt designmallar för webbplatsen samt integrerat via webbvyer i företagets native appar",
+            "Fick grundläggande insikt i API-utveckling på .NET-plattformen"
+        ]
+    },
+    {
+        "title": "Programledare, Vaken med P3 och P4",
+        "company": "Sveriges Radio",
+        "city": "Stockholm",
+        "country": "Sverige",
+        "period": "Juli 2024 – Augusti 2024",
+        "isCurrent": false,
+        "isHighlighted": false,
+        "descriptionText": "",
+        "descriptionBulletPoints": []
+    },
+    {
+        "title": "Programledare och Livereporter, P4 Sörmland",
+        "company": "Sveriges Radio",
+        "city": "Eskilstuna",
+        "country": "Sverige",
+        "period": "Januari 2023 – Mars 2023",
+        "isCurrent": false,
+        "isHighlighted": false,
+        "descriptionText": "",
+        "descriptionBulletPoints": []
+    },
+    {
+        "title": "Programledare, P4 Kronoberg",
+        "company": "Sveriges Radio",
+        "city": "Växjö",
+        "country": "Sverige",
+        "period": "Juni 2022 – Augusti 2022",
+        "isCurrent": false,
+        "isHighlighted": false,
+        "descriptionText": "",
+        "descriptionBulletPoints": []
+    },
+    {
+        "title": "Producent och Redaktör, Rix FM och Star FM",
+        "company": "Nordic Entertainment Group / Viaplay",
+        "city": "Stockholm",
+        "country": "Sverige",
+        "period": "Juli 2020 – December 2021",
+        "isCurrent": false,
+        "isHighlighted": false,
+        "descriptionText": "",
+        "descriptionBulletPoints": []
+    },
+    {
+        "title": "Praktik, Rix FM",
+        "company": "Nordic Entertainment Group / Viaplay",
+        "city": "Stockholm",
+        "country": "Sverige",
+        "period": "November 2019 – Januari 2020",
+        "isCurrent": false,
+        "isHighlighted": false,
+        "descriptionText": "",
+        "descriptionBulletPoints": []
+    }
+]

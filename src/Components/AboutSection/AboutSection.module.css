@@ -1,5 +1,7 @@
 .contentContainer {
     padding-top: 1rem;
+    padding-bottom: 2.5rem;
+
 }
 
 .textContainer {
@@ -100,6 +102,8 @@
 @media (min-width: 426px) {
     .contentContainer {
         padding-top: 3rem;
+        padding-bottom: 4.5rem;
+
     }
 
     .textContainer {
@@ -119,6 +123,8 @@
 @media (min-width: 769px) {
     .contentContainer {
         padding-top: 5rem;
+        padding-bottom: 6rem;
+
     }
 
     .textContainer {

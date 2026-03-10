@@ -18,7 +18,7 @@ export const projectsData: ProjectsData[] = [{
         "5543F5FF-8301-4F95-8F12-3EB2BD57DAFC"
     ],
     coverImage: "./images/projectImages/personalplanerare/omslag.jpg",
-    images: ["./images/projectImages/personalplanerare/screendump.png"]
+    images: ["./images/projectImages/personalplanerare/screendump.jpg"]
 },
 {
     title: "POC Personalplanerare (Koncepttest) med ganska mycket teck här. det är en lång rubrik",
@@ -52,10 +52,10 @@ export const projectsData: ProjectsData[] = [{
         "5543F5FF-8301-4F95-8F12-3EB2BD57DAFC"
     ],
     coverImage: "./images/projectImages/personalplanerare/omslag.jpg",
-    images: ["./images/projectImages/personalplanerare/screendump.png", "./images/projectImages/personalplanerare/screendump.png", "./images/projectImages/personalplanerare/screendump.png"]
+    images: ["./images/projectImages/personalplanerare/screendump.jpg", "./images/projectImages/personalplanerare/screendump.jpg", "./images/projectImages/personalplanerare/screendump.jpg"]
 }, {
     title: "denna har ingen text i beskribningen",
-    summary: "ingen deploylink har denna . inte heller några bilder",
+    summary: "ingen deploylink har denna . inte heller några bilder har den ",
     informationTextHTML: null,
     deployLink: null,
     repoLink: "https://github.com/viktorkuddis/POC-Personalplanerare",
@@ -77,4 +77,28 @@ export const projectsData: ProjectsData[] = [{
     ],
     coverImage: null,
     images: null
-},]
+}, {
+    title: "Wodify",
+    summary: "ingen deploylink har denna . inte heller några bilder men lite längre text ändå för att se hur de blir då ",
+    informationTextHTML: null,
+    deployLink: null,
+    repoLink: "https://github.com/viktorkuddis/POC-Personalplanerare",
+    links: [{
+        linkTitle: "Detta är en länk",
+        link: "https://tinypng.com/",
+    }, {
+        linkTitle: "Detta är en till länk",
+        link: "https://tinypng.com/",
+    }],
+    projectForm: "Solo",
+    projectContext: "Sidoprojekt",
+    label: ["Vilande (W. I. P.)"],
+    relatedSkillsUID: [
+        "F3C5E758-D00A-46F1-95B7-EAF566485F16",
+        "39F9E43C-7D3C-4A15-B526-BD0D6EC6D64A",
+        "BCC4D2F8-617E-4649-990A-E4FF27345A89",
+        "5543F5FF-8301-4F95-8F12-3EB2BD57DAFC"
+    ],
+    coverImage: null,
+    images: null
+}]

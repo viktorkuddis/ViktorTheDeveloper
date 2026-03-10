@@ -1,0 +1,109 @@
+.projectCard {
+    border: 1px solid color-mix(in srgb, var(--foreground-color-regular) 10%, transparent 90%);
+    background-color: var(--foreground-color-inverted-loud);
+    border-radius: 1rem;
+    padding: 1rem;
+
+    /* overflow: hidden; */
+
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+
+    transition: background-color 0.25s, transform 0.25s, border 0.25s;
+
+    &:hover {
+        cursor: pointer;
+        background-color: var(--foreground-color-inverted-loud);
+        transform: scale(101%);
+        border: 1px solid color-mix(in srgb, var(--foreground-color-regular) 20%, transparent 80%);
+
+        .arrow {
+            animation: arrowSlide 1s;
+        }
+    }
+
+
+
+    .informationContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 0.25rem;
+        padding: 0.75rem 0;
+        /* background-color: antiquewhite; */
+
+    }
+
+    .coverImage {
+        /* background-color: aqua; */
+        height: 10rem;
+    }
+
+    .heading {
+        font-size: 1.1rem;
+        line-height: normal;
+        color: var(--foreground-color-loud);
+
+        /* lineClamping. ...  */
+        display: -webkit-box;
+        line-clamp: 2;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+
+    }
+
+    .textChunk {
+        font-size: smaller;
+
+        /* lineClamping. ...  */
+        display: -webkit-box;
+        line-clamp: 3;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .callToAction {
+        /* background-color: aqua; */
+
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        color: var(--foreground-color-loud);
+        font-weight: bold;
+        font-size: 0.9rem;
+        letter-spacing: 0.5px;
+    }
+
+    .arrow {
+        height: 1rem;
+        width: 1rem;
+    }
+}
+
+/* Keyframes för “slide+reset” */
+@keyframes arrowSlide {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(2rem);
+        opacity: 0;
+    }
+
+    51% {
+        transform: translateX(-2rem);
+    }
+
+    /* pilen försvinner och flyttas vänster */
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+
+
+}

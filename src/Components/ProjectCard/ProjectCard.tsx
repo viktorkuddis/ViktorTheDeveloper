@@ -24,7 +24,7 @@ export default function ProjectCard({ project }: Props) {
         </div>
 
         <div className={`${styles.coverImage}`}>
-            {project.coverImage && <ImageContainer src={project.coverImage} alt={""} borderRadius={"small"} height="100%" aspectRatio="4/3" />
+            {project.coverImage && <ImageContainer src={project.coverImage} alt={""} width="100%" borderRadius={"small"} height="100%" aspectRatio="4/3" />
             }
         </div>
 

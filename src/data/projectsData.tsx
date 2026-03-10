@@ -2,7 +2,7 @@
 import type { ProjectsData } from "../types/projectTypes"
 
 export const projectsData: ProjectsData[] = [{
-    title: "POC Personalplanerare (Koncepttest)",
+    title: "POC Personalplanerare (Koncepttest) 12435632486765",
     summary: "Jag utforskar hur arbetspass kan visualiseras på en tidslinje och hur man kan interaggera med dem. Systemet ska även ge feedback i realtid. Detta är ett koncepttest(Proof of concept) av en större schemaläggningsapp. ",
     informationTextHTML: "denna texten är bara en string ‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️",
     deployLink: "https://poc-personalplanerare.netlify.app/",

@@ -1,13 +1,42 @@
+.projectCardCONTAINER {
+    container-type: inline-size;
+    /* detta är för container query */
+    /* background-color: aqua; */
+    height: 100%;
+
+}
+
+.tag {
+    border: 1px solid color-mix(in srgb, var(--foreground-color-regular) 30%, transparent 70%);
+    color: var(--foreground-color-regular);
+    padding: 0.1rem 0.5rem;
+    margin-right: 0.25rem;
+    border-radius: 0.25rem;
+    list-style: none;
+    font-size: x-small;
+    display: inline-block;
+
+    /* position: absolute; */
+
+    /* transform: translateY(0.25rem);
+    display: inline-block; */
+
+}
+
+
 .projectCard {
-    border: 1px solid color-mix(in srgb, var(--foreground-color-regular) 10%, transparent 90%);
-    background-color: var(--foreground-color-inverted-loud);
+    border: 1px solid color-mix(in srgb, var(--foreground-color-regular) 30%, transparent 70%);
+    /* background-color: var(--foreground-color-inverted-loud); */
     border-radius: 1rem;
     padding: 0.75rem;
+
+    height: 100%;
 
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-between;
     gap: 0rem;
+
 
     &:hover {
         cursor: pointer;
@@ -85,37 +114,65 @@
     }
 
 
-    /* tablet och upp */
-    @media (min-width: 426px) {
 
 
 
 
-        .coverImage {
-            /* background-color: aqua; */
-            height: 5rem;
-        }
+
+
+}
+
+@container (width > 20rem) {
+    .projectCard {
+        flex-direction: row;
+        gap: 1rem;
+        padding: 1rem;
 
         .heading {
             font-size: 1.1rem;
+        }
+
+        .informationContainer {
+
+            padding: 0.25rem 0 0 0;
+            /* background-color: antiquewhite; */
+
+        }
+
+        .textChunk {
+
+            line-height: inherit;
+            line-clamp: 2;
+            -webkit-line-clamp: 2;
 
 
+        }
+
+        .coverImage {
+            /* background-color: aqua; */
+            width: 20%;
+            height: 100%;
+            flex-shrink: 0;
         }
 
 
     }
+}
 
-    /* desktop och upp */
-    @media (min-width: 769px) {
-        flex-direction: row;
+@container (width > 29rem) {
+    .projectCard {
         gap: 2rem;
-        padding: 1rem;
 
-        .informationContainer {
+        .coverImage {
+            width: 45%;
+            /* max-width: 16rem; */
+            aspect-ratio: 6/4;
 
-            padding: 0.5rem 0;
-            /* background-color: antiquewhite; */
 
+
+            /* background-color: aqua; */
+            /* height: 10rem;
+            aspect-ratio: 4/3; */
         }
 
         .textChunk {
@@ -127,13 +184,17 @@
 
         }
 
-        .coverImage {
-            /* background-color: aqua; */
-            height: 10rem;
-        }
 
     }
 }
+
+/* tablet och upp */
+
+
+
+
+
+
 
 /* Keyframes för “slide+reset” */
 @keyframes arrowSlide {

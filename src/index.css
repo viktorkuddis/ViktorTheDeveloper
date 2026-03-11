@@ -6,12 +6,15 @@
   padding: 0;
 }
 
+
 html,
 body {
   overflow-x: hidden;
   /* döljer horisontell overflow */
 }
 
+
+/* MIN EGEN :ROOTSTYLE */
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

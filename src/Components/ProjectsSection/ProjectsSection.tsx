@@ -38,20 +38,25 @@ export default function ProjectsSection() {
                 handle={handleProjectDetailsDialog}
                 intro={undefined}
                 title={activeProject?.title as string} bodyContent={
-                    <>
+                    <div className={`${styles.modalContentContainer}`}>
                         <p>{activeProject?.summary}</p>
 
 
-                        <div>
+                        <section className={`${styles.imageSection}`}>
                             {/* bilder här */}
 
                             {/* om inga andra bilder finns så visas cover image.  */}
-                            {!activeProject?.images && <ImageContainer src={activeProject?.coverImage as string} alt={""} borderRadius={"small"} />}
-
+                            {!activeProject?.images && (
+                                <div className={`${styles.imageContainer}`}>
+                                    <ImageContainer src={activeProject?.coverImage as string} alt={""} borderRadius={"small"} />
+                                </div>)}
                             {/* om andra bilder finns så visas dom istället för cover image. Vill jag även visa cover image behöver den listas även i denna array  */}
-                            {activeProject?.images && (activeProject?.images.map((image, i) => <ImageContainer key={i} src={image as string} alt={""} borderRadius={"small"} />))}
-
-                        </div>
+                            {activeProject?.images && (activeProject?.images.map((image, i) => (
+                                <div className={`${styles.imageContainer}`}>
+                                    <ImageContainer key={i} src={image as string} alt={""} borderRadius={"small"} />
+                                </div>)
+                            ))}
+                        </section>
 
                         {activeProject?.informationTextHTML && <div>{activeProject.informationTextHTML}</div>}
 
@@ -92,7 +97,7 @@ export default function ProjectsSection() {
 
 
 
-                    </>
+                    </div>
                 } >
 
             </OutsideScrollDialog>

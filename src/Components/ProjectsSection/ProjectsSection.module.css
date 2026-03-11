@@ -32,3 +32,42 @@
     }
 
 }
+
+/* MODALINNEHÅLLET: */
+
+.modalContentContainer {
+    border: 1px solid rgb(224, 255, 25);
+
+
+    .imageSection {
+        /* border: 1px solid green; */
+        display: flex;
+        flex-wrap: wrap;
+
+        gap: 0.5rem;
+
+        @media (min-width: 426px) {
+            display: grid;
+
+            gap: 0.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(10rem, 32%));
+        }
+    }
+
+
+
+
+    .imageContainer {
+
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 40%;
+
+        /* width: clamp(10rem, 25%, 15rem); */
+        filter: drop-shadow(0 0 1px color-mix(in srgb, var(--foreground-color-regular) 33%, transparent 66%));
+
+        /* background-color: color-mix(in srgb, --foreground-color-regular 50%, transparent 50%) */
+    }
+
+
+}

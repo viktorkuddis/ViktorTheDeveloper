@@ -9,6 +9,8 @@ import OutsideScrollDialog from "../OutsideScrollingModal/OutsideScrollingModal"
 import { useState } from "react";
 import type { ProjectsData } from "../../types/projectTypes";
 
+import ImageContainer from "../ImageContainer/ImageContainer";
+
 const handleProjectDetailsDialog = Dialog.createHandle();
 
 
@@ -27,18 +29,76 @@ export default function ProjectsSection() {
 
                     </Dialog.Trigger>
 
-
-
-
-
-
                 </div>
                 ))}
             </div>
 
 
+            <OutsideScrollDialog
+                handle={handleProjectDetailsDialog}
+                intro={undefined}
+                title={activeProject?.title as string} bodyContent={
+                    <div className={`${styles.modalContentContainer}`}>
+                        <p>{activeProject?.summary}</p>
 
-            <OutsideScrollDialog handle={handleProjectDetailsDialog} title={activeProject?.title as string} bodyContent={activeProject?.informationTextHTML} intro={undefined}>
+
+                        <section className={`${styles.imageSection}`}>
+                            {/* bilder här */}
+
+                            {/* om inga andra bilder finns så visas cover image.  */}
+                            {!activeProject?.images && (
+                                <div className={`${styles.imageContainer}`}>
+                                    <ImageContainer src={activeProject?.coverImage as string} alt={""} borderRadius={"small"} />
+                                </div>)}
+                            {/* om andra bilder finns så visas dom istället för cover image. Vill jag även visa cover image behöver den listas även i denna array  */}
+                            {activeProject?.images && (activeProject?.images.map((image, i) => (
+                                <div className={`${styles.imageContainer}`}>
+                                    <ImageContainer key={i} src={image as string} alt={""} borderRadius={"small"} />
+                                </div>)
+                            ))}
+                        </section>
+
+                        {activeProject?.informationTextHTML && <div>{activeProject.informationTextHTML}</div>}
+
+                        {activeProject?.deployLink && <p>{activeProject.deployLink}</p>}
+                        {activeProject?.repoLink && <p>{activeProject.repoLink}</p>}
+
+                        {activeProject?.links &&
+                            <div>
+                                {activeProject.links.map((link, i) => <a key={i} href={link.link}>{link.linkTitle}</a>)}
+                            </div>
+                        }
+
+                        {activeProject?.label &&
+                            <div>
+                                {activeProject.label.map((label, i) => <div key={i}>{label}</div>)}
+                            </div>
+                        }
+
+                        {activeProject?.projectForm &&
+                            <div>
+                                {activeProject.projectForm}
+                            </div>
+                        }
+
+                        {activeProject?.projectContext &&
+                            <div>
+                                {activeProject.projectContext}
+                            </div>
+                        }
+
+                        {activeProject?.relatedSkillsUID &&
+                            <div>
+                                {activeProject.relatedSkillsUID.map((skill, i) => <div key={i}>{skill}</div>)}
+                            </div>
+                        }
+
+
+
+
+
+                    </div>
+                } >
 
             </OutsideScrollDialog>
 

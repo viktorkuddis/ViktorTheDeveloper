@@ -11,6 +11,7 @@ type Props = {
 
 export default function ProjectCard({ project }: Props) {
     return (
+        // Denna container finns för att kunna utnytja container query i css för själva kortet.
         <div className={`${styles.projectCardCONTAINER}`}>
 
             <div role="button" className={`${styles.projectCard}`}>

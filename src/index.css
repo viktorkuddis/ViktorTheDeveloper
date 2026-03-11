@@ -6,15 +6,6 @@
   padding: 0;
 }
 
-.root {
-  /* isolation för Base UI:s root-element, så popovers/modals alltid hamnar ovanpå */
-  isolation: isolate;
-}
-
-body {
-  /* BASE UI FIX FÖR iOS 26+ Safari: säkerställer att dialogs/backdrops täcker hela viewport korrekt */
-  position: relative;
-}
 
 html,
 body {
@@ -22,6 +13,8 @@ body {
   /* döljer horisontell overflow */
 }
 
+
+/* MIN EGEN :ROOTSTYLE */
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

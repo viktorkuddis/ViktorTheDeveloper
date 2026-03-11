@@ -1,3 +1,13 @@
+# ViktorTheDeveloper
+
+Detta projekt använder iconer från [Lucide](https://lucide.dev/guide/packages/lucide-react)
+
+Detta projekt använder utvalda komponenter från [Bade UI](https://base-ui.com/react/overview/quick-start)
+
+---
+
+---
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -71,7 +81,3 @@ export default defineConfig([
   },
 ]);
 ```
-
-# ViktorTheDeveloper
-
-Detta projekt använder iconer från [Lucide](https://lucide.dev/guide/packages/lucide-react)

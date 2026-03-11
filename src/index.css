@@ -6,6 +6,16 @@
   padding: 0;
 }
 
+.root {
+  /* isolation för Base UI:s root-element, så popovers/modals alltid hamnar ovanpå */
+  isolation: isolate;
+}
+
+body {
+  /* BASE UI FIX FÖR iOS 26+ Safari: säkerställer att dialogs/backdrops täcker hela viewport korrekt */
+  position: relative;
+}
+
 html,
 body {
   overflow-x: hidden;

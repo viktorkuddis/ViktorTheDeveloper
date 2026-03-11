@@ -42,9 +42,9 @@ export const projectsData: ProjectsData[] = [{
         linkTitle: "Detta är en till länk",
         link: "https://tinypng.com/",
     }],
-    projectForm: "Solo",
-    projectContext: "Sidoprojekt",
-    label: ["Vilande (W.i.p.)"],
+    projectForm: null,
+    projectContext: null,
+    label: null,
     relatedSkillsUID: [
         "F3C5E758-D00A-46F1-95B7-EAF566485F16",
         "39F9E43C-7D3C-4A15-B526-BD0D6EC6D64A",

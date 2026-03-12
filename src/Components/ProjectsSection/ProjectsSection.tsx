@@ -11,6 +11,11 @@ import type { ProjectsData } from "../../types/projectTypes";
 
 import ImageContainer from "../ImageContainer/ImageContainer";
 
+import { Globe } from 'lucide-react';
+import { ChevronsLeftRightEllipsis } from 'lucide-react';
+
+
+
 const handleProjectDetailsDialog = Dialog.createHandle();
 
 
@@ -78,7 +83,15 @@ export default function ProjectsSection() {
                             ))}
                         </section>
 
-                        <button className={`btn-primary`}>Se i produktion</button>
+
+                        <div className={styles.iconButtonGroup}>
+                            <button className={`btn-primary ${styles.iconButton}`}> <Globe />PRODUKTION</button>
+                            <button className={`btn-primary ${styles.iconButton}`}> <ChevronsLeftRightEllipsis />KOD</button>
+                        </div>
+
+
+
+
 
                         {activeProject?.deployLink && <p>{activeProject.deployLink}</p>}
                         {activeProject?.repoLink && <p>{activeProject.repoLink}</p>}

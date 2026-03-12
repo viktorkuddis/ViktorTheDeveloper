@@ -34,7 +34,7 @@ export default function OutsideScrollDialog({ title, intro, bodyContent, handle 
 
                                     <div className={styles.PopupHeader}>
                                         <Dialog.Title className={styles.Title}>
-                                            Dialog {title}
+                                            {title}
                                         </Dialog.Title>
                                         <Dialog.Close className={styles.Close} aria-label="Close">
                                             <X className={styles.CloseIcon} />

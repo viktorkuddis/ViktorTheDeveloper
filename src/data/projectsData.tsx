@@ -142,7 +142,7 @@ export const projectsData: ProjectsData[] = [{
     label: ["Vilande (W.i.p.)"],
     projectForm: "Solo",
     projectContext: "Sidoprojekt",
-    relatedSkillsUID: ["Rest API", "Bootstrap", "BCC4D2F8-617E-4649-990A-E4FF27345A89", "5543F5FF-8301-4F95-8F12-3EB2BD57DAFC",],
+    relatedSkillsUID: ["Rest API XXX", "Bootstrap XXX", "BCC4D2F8-617E-4649-990A-E4FF27345A89", "5543F5FF-8301-4F95-8F12-3EB2BD57DAFC",],
     coverImage: "./images/projectImages/redaxSolo/redaxSoloDarkMode.jpeg",
     images: ["./images/projectImages/redaxSolo/redaxSoloDarkMode.jpeg", "./images/projectImages/redaxSolo/RedaxSoloLightMode.jpeg"]
 }]

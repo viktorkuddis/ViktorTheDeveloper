@@ -1,6 +1,11 @@
 import { projectsData } from "../../data/projectsData"
 
+import type { SkillType } from "../../types/types"
+
+import skillsData from "@/data/skills.json"
+
 import styles from "./ProjectsSection.module.css"
+
 
 import ProjectCard from "../ProjectCard/ProjectCard"
 
@@ -17,6 +22,8 @@ import { Link } from 'lucide-react';
 
 
 
+
+const skills: SkillType[] = skillsData.skillsMap
 
 const handleProjectDetailsDialog = Dialog.createHandle();
 
@@ -69,6 +76,43 @@ export default function ProjectsSection() {
                         <p>{activeProject?.summary}</p>
 
 
+
+
+
+                        {activeProject?.relatedSkillsUID &&
+                            <div>
+
+
+                                {/* mappa igenom aktiva prohejtets relaterade skills ssom är u uid-format */}
+
+                                <div className={styles.skillsContainer}>
+
+
+
+                                    {activeProject.relatedSkillsUID.map((relatedskillUID, i) => (
+
+                                        // för varje skill kollar vi om den finns reggad i kompletta öistan över skills.om den finns så renderar vi den:
+
+
+                                        skills.find((skill) => relatedskillUID == skill.uid)) && (
+
+
+                                            <div key={i} className={styles.skill}>
+                                                <img className={styles.skillicon} src={`${skills.find((skill) => relatedskillUID == skill.uid)?.imgSrc}`} alt="" />
+                                                <div>{skills.find((skill) => relatedskillUID == skill.uid)?.title} </div>
+                                            </div>
+
+
+
+                                        )
+
+                                    )}
+                                </div>
+
+                            </div>
+                        }
+
+
                         <div className={styles.iconButtonGroup}>
                             {activeProject?.deployLink && <button
                                 className={`btn-primary ${styles.iconButton}`}
@@ -84,8 +128,6 @@ export default function ProjectsSection() {
                                 <ChevronsLeftRightEllipsis />KOD
                             </button>}
                         </div>
-
-
 
                         {activeProject?.links &&
                             <div className={styles.linksContainer}>
@@ -109,28 +151,13 @@ export default function ProjectsSection() {
                                 </div>)}
                             {/* om andra bilder finns så visas dom istället för cover image. Vill jag även visa cover image behöver den listas även i denna array  */}
                             {activeProject?.images && (activeProject?.images.map((image, i) => (
-                                <div className={`${styles.imageContainer}`}>
-                                    <ImageContainer key={i} src={image as string} alt={""} borderRadius={"small"} />
+                                <div key={i} className={`${styles.imageContainer}`}>
+                                    <ImageContainer src={image as string} alt={""} borderRadius={"small"} />
                                 </div>)
                             ))}
                         </section>
 
 
-
-
-
-
-
-
-
-
-
-
-                        {activeProject?.relatedSkillsUID &&
-                            <div>
-                                {activeProject.relatedSkillsUID.map((skill, i) => <div key={i}>{skill}</div>)}
-                            </div>
-                        }
 
 
 

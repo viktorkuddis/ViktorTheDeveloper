@@ -12,5 +12,7 @@ export type ExperienceType = {
 
 export type SkillType = {
     title: string,
+    uid: string,
     imgSrc: string
 }
+

@@ -13,6 +13,8 @@ import ImageContainer from "../ImageContainer/ImageContainer";
 
 import { Globe } from 'lucide-react';
 import { ChevronsLeftRightEllipsis } from 'lucide-react';
+import { Link } from 'lucide-react';
+
 
 
 
@@ -67,6 +69,36 @@ export default function ProjectsSection() {
                         <p>{activeProject?.summary}</p>
 
 
+                        <div className={styles.iconButtonGroup}>
+                            {activeProject?.deployLink && <button
+                                className={`btn-primary ${styles.iconButton}`}
+                                onClick={() => window.open(`${activeProject.deployLink}`, "_blank")}
+                            >
+                                <Globe />PRODUKTION
+                            </button>}
+
+                            {activeProject?.repoLink && <button
+                                className={`btn-primary ${styles.iconButton}`}
+                                onClick={() => window.open(`${activeProject.repoLink}`, "_blank")}
+                            >
+                                <ChevronsLeftRightEllipsis />KOD
+                            </button>}
+                        </div>
+
+
+
+                        {activeProject?.links &&
+                            <div className={styles.linksContainer}>
+                                {activeProject.links.map((link, i) =>
+                                    <a key={i}
+                                        className={styles.link}
+                                        href={link.link}
+                                    >
+                                        <Link className={styles.linkIcon} />
+                                        {link.linkTitle}
+                                    </a>)}
+                            </div>
+                        }
                         <section className={`${styles.imageSection}`}>
                             {/* bilder här */}
 
@@ -84,23 +116,8 @@ export default function ProjectsSection() {
                         </section>
 
 
-                        <div className={styles.iconButtonGroup}>
-                            <button className={`btn-primary ${styles.iconButton}`}> <Globe />PRODUKTION</button>
-                            <button className={`btn-primary ${styles.iconButton}`}> <ChevronsLeftRightEllipsis />KOD</button>
-                        </div>
 
 
-
-
-
-                        {activeProject?.deployLink && <p>{activeProject.deployLink}</p>}
-                        {activeProject?.repoLink && <p>{activeProject.repoLink}</p>}
-
-                        {activeProject?.links &&
-                            <div>
-                                {activeProject.links.map((link, i) => <a key={i} href={link.link}>{link.linkTitle}</a>)}
-                            </div>
-                        }
 
 
 

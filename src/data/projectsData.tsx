@@ -133,7 +133,7 @@ export const projectsData: ProjectsData[] = [{
     deployLink: "https://redaxsolo.netlify.app/feed",
     repoLink: "https://github.com/viktorkuddis/REDAX-SOLO",
     links: [{
-        linkTitle: "Denna länken leder bara till google",
+        linkTitle: "RAPPORT: Examensarbete, Viktor  Magnusson ",
         link: "https://www.google.com/"
     }, {
         linkTitle: "se en bild på en söt katt",

@@ -1,0 +1,13 @@
+.footerWrapper {
+
+    height: 4rem;
+}
+
+/* tablet */
+@media (min-width: 426px) {
+    .footerWrapper {
+        /* background-color: var(--background-color-elevated); */
+
+        height: 8rem;
+    }
+}

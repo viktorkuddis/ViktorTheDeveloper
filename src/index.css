@@ -13,6 +13,9 @@ body {
   /* döljer horisontell overflow */
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 /* MIN EGEN :ROOTSTYLE */
 :root {
@@ -52,6 +55,17 @@ h2 {
   line-height: 1.1;
   margin-top: 1.5rem;
   margin-bottom: 0.75rem;
+
+}
+
+hr {
+
+  border: none;
+  /* tar bort standardlinjen */
+  height: 1px;
+  /* tjocklek på linjen */
+  background-color: var(--foreground-color-regular);
+  opacity: 20%;
 
 }
 

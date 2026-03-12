@@ -2,7 +2,7 @@
 
 Detta projekt använder iconer från [Lucide](https://lucide.dev/guide/packages/lucide-react)
 
-Detta projekt använder utvalda komponenter från [Bade UI](https://base-ui.com/react/overview/quick-start)
+Detta projekt använder utvalda komponenter från [Base UI](https://base-ui.com/react/overview/quick-start)
 
 ---
 

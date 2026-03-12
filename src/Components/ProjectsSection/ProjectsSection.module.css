@@ -38,36 +38,219 @@
 .modalContentContainer {
     /* border: 1px solid rgb(224, 255, 25); */
 
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 
-    .imageSection {
-        /* border: 1px solid green; */
-        display: flex;
-        flex-wrap: wrap;
-
-        gap: 0.5rem;
-
-        @media (min-width: 426px) {
-            display: grid;
-
-            gap: 0.5rem;
-            grid-template-columns: repeat(auto-fit, minmax(10rem, 32%));
-        }
+    h1,
+    h2,
+    h3,
+    h4 {
+        word-break: break-word;
+        hyphens: auto
     }
 
+    .imageSection {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        row-gap: 0.5rem;
 
+        padding: 1rem 0;
+
+        /* background-color: purple; */
+
+        /* tablet och upp */
+        @media (min-width: 426px) {
+            grid-template-columns: repeat(3, auto);
+            margin: 0 auto;
+
+        }
+
+    }
 
 
     .imageContainer {
 
-        flex-grow: 1;
-        flex-shrink: 1;
-        flex-basis: 40%;
 
-        /* width: clamp(10rem, 25%, 15rem); */
+        &:hover {
+            transform: scale(1.02);
+        }
+
+        transition: 0.3s;
+
+        padding: 0 0.25rem;
+        /* filter: drop-shadow(0 0 1px color-mix(in srgb, var(--foreground-color-regular) 33%, transparent 66%)); */
+
         filter: drop-shadow(0 0 1px color-mix(in srgb, var(--foreground-color-regular) 33%, transparent 66%));
 
-        /* background-color: color-mix(in srgb, --foreground-color-regular 50%, transparent 50%) */
+
+        /* tablet och upp */
+        @media (min-width: 426px) {
+            max-width: 25rem;
+        }
     }
+
+    /* ---------- */
+
+    .tagContainer {
+        /* background-color: aquamarine; */
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+
+
+    }
+
+    /* tunga taggar */
+    .tag {
+        /* border: 1px solid color-mix(in srgb, var(--foreground-color-regular) 30%, transparent 70%); */
+        color: var(--foreground-color-regular);
+        background-color: color-mix(in srgb, var(--foreground-color-regular) 66%, transparent 33%);
+        color: white;
+        padding: 0rem 0.75rem;
+        border-radius: 0.25rem;
+        font-size: 0.9rem;
+        flex-shrink: 0;
+        /* inline block för att den inte ska brytas mitt i då den är en span . */
+    }
+
+    /* lätta taggar: */
+    /* .tag {
+        border: 1px solid color-mix(in srgb, var(--foreground-color-regular) 30%, transparent 70%);
+        color: var(--foreground-color-regular);
+        background-color: unset;
+
+        padding: 0rem 0.75rem;
+        border-radius: 0.25rem;
+        font-size: 0.9rem;
+    } */
+
+
+    .iconButtonGroup {
+
+        /* background-color: aquamarine; */
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem
+    }
+
+    .iconButton {
+
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+
+        padding: 0.5rem 1.5rem;
+        font-size: small;
+    }
+
+    .linksContainer {
+        background-color:
+            color-mix(in srgb, var(--foreground-color-regular) 10%, transparent 90%);
+        border-radius: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        padding: 1rem 1rem;
+
+        .link {
+            opacity: 100%;
+            display: flex;
+            gap: 0.25rem;
+            align-items: center;
+            /* background-color: rgb(204, 212, 204); */
+            line-height: normal;
+            /* background-color: aqua; */
+            width: max-content;
+
+        }
+
+        .linkIcon {
+            height: 1.25rem;
+            flex-shrink: 0;
+            margin-bottom: auto;
+
+
+        }
+
+        /* tablet och upp */
+        @media (min-width: 426px) {
+            padding: 1rem 1.5rem;
+
+            .link {
+                gap: 0.5rem;
+            }
+        }
+    }
+
+
+    .skillsContainer {
+        display: flex;
+        padding-left: 0.5rem;
+        /* background-color: red; */
+
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        gap: 0.5rem 1.5rem;
+
+        .skill {
+            /* background-color: aqua; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            gap: 0.25rem;
+            flex-shrink: 0;
+
+
+            .skillicon {
+                height: 1.25rem;
+            }
+        }
+    }
+
+    .informatioTextHTMLContainer {
+        /* background-color: aquamarine; */
+
+
+
+        h3 {
+            line-height: normal;
+            margin-bottom: 0.5rem;
+            font-size: 1.15rem;
+        }
+
+        h4 {
+            font-size: 1rem;
+            line-height: normal;
+            margin-bottom: 0.25rem;
+            margin-top: 1rem;
+        }
+
+        p,
+        ul,
+        li {
+            font-size: 0.85rem;
+        }
+
+        p {
+            margin-bottom: 0.5rem;
+            line-height: 1.4;
+        }
+
+        ul {
+            padding-left: 1.5rem;
+        }
+
+
+
+
+
+    }
+
+
+
+
 
 
 }

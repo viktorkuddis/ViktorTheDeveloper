@@ -53,7 +53,7 @@ export const projectsData: ProjectsData[] = [{
         "5543F5FF-8301-4F95-8F12-3EB2BD57DAFC"
     ],
     coverImage: "./images/projectImages/personalplanerare/omslag.jpg",
-    images: ["./images/projectImages/personalplanerare/screendump.jpg", "./images/projectImages/personalplanerare/screendump.jpg", "./images/projectImages/personalplanerare/screendump.jpg"]
+    images: ["./images/projectImages/personalplanerare/screendump.jpg", "./images/projectImages/personalplanerare/screendump.jpg", "./images/projectImages/personalplanerare/screendump.jpg", "./images/projectImages/personalplanerare/screendump.jpg", "./images/projectImages/personalplanerare/screendump.jpg"]
 }, {
     title: "denna har ingen text i beskribningen",
     summary: "ingen deploylink har denna . inte heller några bilder har den ",

@@ -39,6 +39,27 @@ export default function ProjectsSection() {
                 intro={undefined}
                 title={activeProject?.title as string} bodyContent={
                     <div className={`${styles.modalContentContainer}`}>
+
+                        <div className={styles.tagContainer}>
+                            {activeProject?.label &&
+                                <div>
+                                    {activeProject.label.map((label, i) => <div className={styles.tag} key={i}>{label}</div>)}
+                                </div>
+                            }
+
+                            {activeProject?.projectForm &&
+                                <div className={styles.tag}>
+                                    {activeProject.projectForm}
+                                </div>
+                            }
+
+
+                            {activeProject?.projectContext &&
+                                <div className={styles.tag}>
+                                    {activeProject.projectContext}
+                                </div>
+                            }
+                        </div>
                         <p>{activeProject?.summary}</p>
 
 
@@ -58,7 +79,7 @@ export default function ProjectsSection() {
                             ))}
                         </section>
 
-                        {activeProject?.informationTextHTML && <div>{activeProject.informationTextHTML}</div>}
+
 
                         {activeProject?.deployLink && <p>{activeProject.deployLink}</p>}
                         {activeProject?.repoLink && <p>{activeProject.repoLink}</p>}
@@ -69,23 +90,12 @@ export default function ProjectsSection() {
                             </div>
                         }
 
-                        {activeProject?.label &&
-                            <div>
-                                {activeProject.label.map((label, i) => <div key={i}>{label}</div>)}
-                            </div>
-                        }
 
-                        {activeProject?.projectForm &&
-                            <div>
-                                {activeProject.projectForm}
-                            </div>
-                        }
 
-                        {activeProject?.projectContext &&
-                            <div>
-                                {activeProject.projectContext}
-                            </div>
-                        }
+
+
+
+
 
                         {activeProject?.relatedSkillsUID &&
                             <div>
@@ -96,7 +106,7 @@ export default function ProjectsSection() {
 
 
 
-
+                        {activeProject?.informationTextHTML && <div>{activeProject.informationTextHTML}</div>}
                     </div>
                 } >
 

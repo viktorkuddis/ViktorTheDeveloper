@@ -55,6 +55,17 @@ h2 {
 
 }
 
+hr {
+
+  border: none;
+  /* tar bort standardlinjen */
+  height: 1px;
+  /* tjocklek på linjen */
+  background-color: var(--foreground-color-regular);
+  opacity: 20%;
+
+}
+
 /* tablet och upp */
 @media (min-width: 426px) {
   h1 {

@@ -81,19 +81,11 @@ export default function ProjectsSection() {
 
                         {activeProject?.relatedSkillsUID &&
                             <div>
-
-
                                 {/* mappa igenom aktiva prohejtets relaterade skills ssom är u uid-format */}
-
                                 <div className={styles.skillsContainer}>
-
-
-
                                     {activeProject.relatedSkillsUID.map((relatedskillUID, i) => (
 
                                         // för varje skill kollar vi om den finns reggad i kompletta öistan över skills.om den finns så renderar vi den:
-
-
                                         skills.find((skill) => relatedskillUID == skill.uid)) && (
 
 
@@ -101,11 +93,7 @@ export default function ProjectsSection() {
                                                 <img className={styles.skillicon} src={`${skills.find((skill) => relatedskillUID == skill.uid)?.imgSrc}`} alt="" />
                                                 <div>{skills.find((skill) => relatedskillUID == skill.uid)?.title} </div>
                                             </div>
-
-
-
                                         )
-
                                     )}
                                 </div>
 
@@ -159,14 +147,13 @@ export default function ProjectsSection() {
 
 
 
-
-
-
-                        {activeProject?.informationTextHTML && <div>{activeProject.informationTextHTML}</div>}
+                        {activeProject?.informationTextHTML &&
+                            <div className={styles.informatioTextHTMLContainer}>
+                                {activeProject.informationTextHTML}</div>}
                     </div>
                 } >
 
-            </OutsideScrollDialog>
+            </OutsideScrollDialog >
 
 
         </section >

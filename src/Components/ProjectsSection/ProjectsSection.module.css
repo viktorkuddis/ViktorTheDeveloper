@@ -42,13 +42,20 @@
     flex-direction: column;
     gap: 2rem;
 
+    h1,
+    h2,
+    h3,
+    h4 {
+        word-break: break-word;
+        hyphens: auto
+    }
 
     .imageSection {
         display: grid;
         grid-template-columns: repeat(2, auto);
         row-gap: 0.5rem;
 
-        padding: 1.5rem 0;
+        padding: 1rem 0;
 
         /* background-color: purple; */
 
@@ -194,7 +201,44 @@
         }
     }
 
+    .informatioTextHTMLContainer {
+        /* background-color: aquamarine; */
 
+
+
+        h3 {
+            line-height: normal;
+            margin-bottom: 0.5rem;
+            font-size: 1.15rem;
+        }
+
+        h4 {
+            font-size: 1rem;
+            line-height: normal;
+            margin-bottom: 0.25rem;
+            margin-top: 1rem;
+        }
+
+        p,
+        ul,
+        li {
+            font-size: 0.85rem;
+        }
+
+        p {
+            margin-bottom: 0.5rem;
+            line-height: 1.4;
+        }
+
+        ul {
+            padding-left: 1.5rem;
+        }
+
+
+
+
+
+    }
 
 
 

@@ -80,7 +80,7 @@ export const projectsData: ProjectsData[] = [{
     images: null
 }, {
     title: "Wodify",
-    summary: "ingen deploylink har denna . inte heller några bilder men lite längre text ändå för att se hur de blir då ",
+    summary: "Denna har inga tillhärande bilder men bara en omslagsbild. ingen deploylink har denna . inte heller några bilder men lite längre text ändå för att se hur de blir då ",
     informationTextHTML: null,
     deployLink: null,
     repoLink: "https://github.com/viktorkuddis/POC-Personalplanerare",
@@ -100,7 +100,7 @@ export const projectsData: ProjectsData[] = [{
         "BCC4D2F8-617E-4649-990A-E4FF27345A89",
         "5543F5FF-8301-4F95-8F12-3EB2BD57DAFC"
     ],
-    coverImage: null,
+    coverImage: "https://www.aaha.org/wp-content/uploads/2024/09/kitten-lying-in-blanket.jpg",
     images: null
 },
 {
@@ -108,19 +108,19 @@ export const projectsData: ProjectsData[] = [{
     summary: "Redaktionellt verktyg byggt efter reella behov jag haft i jobbet som Studioreporter-aka Programledare. Systemet samlar och filtrerar nyheter i ett enhetligt flöde.",
     informationTextHTML: <>
         <h3>Redaktionellt verktyg byggt efter reella behov i rollen som Studioreporter/Programledare</h3>
-        <h3>Problem:</h3>
+        <h4>Problem:</h4>
         <p><em>Som programledare på en radiokanal är en av arbetsuppgifterna att dagligen förbereda ett antal relevanta, intressanta eller underhållande “prator”/“spaningar” att fylla sändningen med – gärna med avstamp i dagens nyhetsläge.</em></p>
         <p><em>Inför varje sändning behöver jag ett snabbt och smidigt sätt att uppdatera mig om det absolut senaste och mest relevanta för programmets målgrupp och geografiska kontext. Att planlöst klicka runt på olika sajter och dess undersidor, samtidigt som jag behövde värdera och sålla i innehållet, blev snabbt ohållbart.</em></p>
         <p><em>Jag behövde ett enhetligt system där allt material kunde behandlas på ett och samma ställe, utan att byta fönster eller hoppa mellan flikar.</em></p>
-        <h3> Lösning:</h3>
+        <h4> Lösning:</h4>
         <ul>
             <li>Jag har skapat ett feed/flöde som snabbt summerar nyheter från utvalda källor i listform.</li>
             <li>Användaren kan ta del av hela nyheten direkt i appen.</li>
             <li>För en initial gallring finns filter tillgängliga baserade på ursprung, källtyp och källans egna kategoriseringssystem.</li>
         </ul>
-        <h3>Just nu:</h3 >
+        <h4>Just nu:</h4 >
         <p><b>Systemet bygger initialt på Sveriges Radios nyheter, men ambitionen är att utöka det med SVT, de stora kvälls- och dagstidningarna samt viss nischmedia.</b></p>
-        <h3>Nästa steg:</h3>
+        <h4>Nästa steg:</h4>
         <ul>
             <li>Möjlighet att bearbeta nyheter och skriva manus direkt i systemet genom att spara och sortera intressanta artiklar.</li>
             <li>Möjlighet att associera anteckningar/manusfiler till en artikel.</li>

@@ -135,12 +135,17 @@ export default function ProjectsSection() {
                             {/* om inga andra bilder finns så visas cover image.  */}
                             {!activeProject?.images && (
                                 <div className={`${styles.imageContainer}`}>
-                                    <ImageContainer src={activeProject?.coverImage as string} alt={""} borderRadius={"small"} />
+                                    <a href={activeProject?.coverImage as string} target="_blank">
+                                        <ImageContainer src={activeProject?.coverImage as string} alt={""} borderRadius={"small"} />
+                                    </a>
                                 </div>)}
                             {/* om andra bilder finns så visas dom istället för cover image. Vill jag även visa cover image behöver den listas även i denna array  */}
                             {activeProject?.images && (activeProject?.images.map((image, i) => (
                                 <div key={i} className={`${styles.imageContainer}`}>
-                                    <ImageContainer src={image as string} alt={""} borderRadius={"small"} />
+                                    <a href={image as string} target="_blank">
+                                        <ImageContainer src={image as string} alt={""} borderRadius={"small"} />
+                                    </a>
+
                                 </div>)
                             ))}
                         </section>

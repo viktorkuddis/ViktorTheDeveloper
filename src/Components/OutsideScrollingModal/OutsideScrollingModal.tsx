@@ -16,7 +16,7 @@ type Props = {
 // Dokumentation om hurman triggar dialog:
 // https://base-ui.com/react/components/dialog#multiple-triggers
 
-export default function OutsideScrollDialog({ title, intro, bodyContent, handle }: Props) {
+export default function OutsideScrollDialog({ title, bodyContent, handle }: Props) {
     const popupRef = React.useRef<HTMLDivElement>(null);
     return (
         <Dialog.Root handle={handle}>
@@ -41,9 +41,9 @@ export default function OutsideScrollDialog({ title, intro, bodyContent, handle 
                                         </Dialog.Close>
                                     </div>
 
-                                    <Dialog.Description className={styles.Description}>
+                                    {/* <Dialog.Description className={styles.Description}>
                                         {intro}
-                                    </Dialog.Description>
+                                    </Dialog.Description> */}
 
                                     <div className={styles.Body}>
                                         {bodyContent}

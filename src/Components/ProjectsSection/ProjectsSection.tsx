@@ -42,11 +42,10 @@ export default function ProjectsSection() {
 
                         <div className={styles.tagContainer}>
                             {activeProject?.label &&
-                                <div>
+                                <>
                                     {activeProject.label.map((label, i) => <div className={styles.tag} key={i}>{label}</div>)}
-                                </div>
+                                </>
                             }
-
                             {activeProject?.projectForm &&
                                 <div className={styles.tag}>
                                     {activeProject.projectForm}
@@ -79,7 +78,7 @@ export default function ProjectsSection() {
                             ))}
                         </section>
 
-
+                        <button className={`btn-primary`}>Se i produktion</button>
 
                         {activeProject?.deployLink && <p>{activeProject.deployLink}</p>}
                         {activeProject?.repoLink && <p>{activeProject.repoLink}</p>}

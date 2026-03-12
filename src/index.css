@@ -13,6 +13,9 @@ body {
   /* döljer horisontell overflow */
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 /* MIN EGEN :ROOTSTYLE */
 :root {

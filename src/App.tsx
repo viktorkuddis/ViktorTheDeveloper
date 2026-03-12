@@ -70,33 +70,32 @@ function App() {
       <NavBar />
       <HeroSection />
       <Banner
-        bannerContent={
-          <div style={{
-            display: "flex",
-            alignItems: 'center',
-            justifyContent: "center",
-            gap: "2rem"
-          }}>
-            <span
-              className='headding-loud'
-              style={{
-                color: "white",
-                flexShrink: "0",
-                fontSize: "1rem"
-              }}>
-              KONTAKTA MIG
-            </span>
-            <Mail
-              style={{
-                color: "white",
-                flexShrink: "0",
-                height: "1.5rem",
-                width: "1.5rem"
-              }} />
-          </div>}
+        bannerContent={<div style={{
+          display: "flex",
+          alignItems: 'center',
+          justifyContent: "center",
+          gap: "2rem"
+        }}>
+          <span
+            className='headding-loud'
+            style={{
+              color: "white",
+              flexShrink: "0",
+              fontSize: "1rem"
+            }}>
+            KONTAKTA MIG
+          </span>
+          <Mail
+            style={{
+              color: "white",
+              flexShrink: "0",
+              height: "1.5rem",
+              width: "1.5rem"
+            }} />
+        </div>}
         bannerType={"double"}
         repeatContent={10}
-        gap={"2rem"} />
+        gap={"2rem"} link={"kontakt"} />
       < AboutSection />
       <ExperienceSection />
       <ProjectsSection />
@@ -105,33 +104,32 @@ function App() {
         repeatContent={false}
         gap={''} /> */}
       <Banner
-        bannerContent={
-          <div style={{
-            display: "flex",
-            alignItems: 'center',
-            justifyContent: "center",
-            gap: "2rem"
-          }}>
-            <span
-              className='headding-loud'
-              style={{
-                color: "white",
-                flexShrink: "0",
-                fontSize: "1rem"
-              }}>
-              KONTAKTA MIG
-            </span>
-            <Mail
-              style={{
-                color: "white",
-                flexShrink: "0",
-                height: "1.5rem",
-                width: "1.5rem"
-              }} />
-          </div>}
+        bannerContent={<div style={{
+          display: "flex",
+          alignItems: 'center',
+          justifyContent: "center",
+          gap: "2rem"
+        }}>
+          <span
+            className='headding-loud'
+            style={{
+              color: "white",
+              flexShrink: "0",
+              fontSize: "1rem"
+            }}>
+            KONTAKTA MIG
+          </span>
+          <Mail
+            style={{
+              color: "white",
+              flexShrink: "0",
+              height: "1.5rem",
+              width: "1.5rem"
+            }} />
+        </div>}
         bannerType={"double"}
         repeatContent={10}
-        gap={"2rem"} />
+        gap={"2rem"} link={''} />
       <ContactSection />
       <Footer />
 

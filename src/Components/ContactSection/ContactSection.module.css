@@ -1,6 +1,6 @@
 .contentContainer {
     padding-top: 2rem;
-    padding-bottom: 3rem;
+
     text-align: center;
 }
 
@@ -53,11 +53,37 @@
 
 }
 
+.backToTop {
+
+    margin-top: 2rem;
+    transform: scale(0.8) translateX(1rem) translateY(1rem);
+    color: black;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0 0.5rem 0;
+
+    /* background-color: aqua; */
+    width: max-content;
+    margin-left: auto;
+
+    &:hover {
+
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
+
 
 /* tablet och upp */
 @media (min-width: 426px) {
-    .contentContainer {
-        padding-bottom: 6rem;
+
+
+    .backToTop {
+        margin-top: 2rem;
+
     }
 
     .mail {

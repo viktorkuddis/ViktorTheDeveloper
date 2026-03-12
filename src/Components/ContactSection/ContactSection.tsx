@@ -1,5 +1,8 @@
 import styles from "./ContactSection.module.css"
 
+import { ArrowUp } from 'lucide-react';
+
+
 
 const mailadress = "viktor.kuddis";
 const domain = "hotmail.com"
@@ -9,7 +12,7 @@ export default function ContactSection() {
 
     return (
 
-        <div className={`content-container-width content-container-padding ${styles.contentContainer}`}>
+        <section id="kontakt" className={`content-container-width content-container-padding ${styles.contentContainer}`}>
             <h2 className={`headding-loud ${styles.heading}`}>
                 VILL DU
                 <br />
@@ -37,7 +40,14 @@ export default function ContactSection() {
 
 
 
+            </div >
+
+            <div onClick={() => window.scrollTo({ top: 0 })}
+                className={styles.backToTop}>
+                Tillbaka till toppen  <ArrowUp />
             </div>
-        </div >
+
+
+        </section >
     )
 }

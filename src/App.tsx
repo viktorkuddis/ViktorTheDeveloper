@@ -100,10 +100,38 @@ function App() {
       < AboutSection />
       <ExperienceSection />
       <ProjectsSection />
-      <Banner bannerType={"singleUnderBanner"}
+      {/* <Banner bannerType={"singleUnderBanner"}
         bannerContent={null}
         repeatContent={false}
-        gap={''} />
+        gap={''} /> */}
+      <Banner
+        bannerContent={
+          <div style={{
+            display: "flex",
+            alignItems: 'center',
+            justifyContent: "center",
+            gap: "2rem"
+          }}>
+            <span
+              className='headding-loud'
+              style={{
+                color: "white",
+                flexShrink: "0",
+                fontSize: "1rem"
+              }}>
+              KONTAKTA MIG
+            </span>
+            <Mail
+              style={{
+                color: "white",
+                flexShrink: "0",
+                height: "1.5rem",
+                width: "1.5rem"
+              }} />
+          </div>}
+        bannerType={"double"}
+        repeatContent={10}
+        gap={"2rem"} />
       <ContactSection />
       <Footer />
 

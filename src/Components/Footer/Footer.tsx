@@ -6,6 +6,11 @@ export default function Footer() {
         <div className={styles.footerWrapper}>
             <div className="content-container-width content-container-padding">
                 {/* <div>Footer</div> */}
+
+
+
+
+
                 <hr />
             </div>
         </div>

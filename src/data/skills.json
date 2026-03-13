@@ -70,7 +70,7 @@
             "imgSrc": "/images/Scrum.png"
         },
         {
-            "title": "Git / GitHub",
+            "title": "Git/GitHub",
             "uid": "5543F5FF-8301-4F95-8F12-3EB2BD57DAFC",
             "imgSrc": "/images/Git.png"
         },
@@ -80,19 +80,24 @@
             "imgSrc": "/images/JavaScript.png"
         },
         {
-            "title": "",
-            "uid": "",
-            "imgSrc": ""
+            "title": "REST API",
+            "uid": "3A13375B-2D72-4DE9-80F7-B506A11A7BD7",
+            "imgSrc": "/images/RestAPI2.png"
         },
         {
-            "title": "",
-            "uid": "",
-            "imgSrc": ""
+            "title": "Bootstrap",
+            "uid": "F974373D-B250-4D75-9FA1-986DD1059265",
+            "imgSrc": "/images/Bootstrap.png"
         },
         {
-            "title": "",
-            "uid": "",
-            "imgSrc": ""
+            "title": "Agila metoder",
+            "uid": "5A59A4D4-4B49-4A5D-96F0-D79E32C1072E",
+            "imgSrc": "/images/Agile.png"
+        },
+        {
+            "title": "Jira",
+            "uid": "9B38F406-C577-4165-931C-2E6A72EFC233",
+            "imgSrc": "/images/Jira.png"
         },
         {
             "title": "",

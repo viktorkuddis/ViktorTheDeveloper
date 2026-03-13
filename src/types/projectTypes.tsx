@@ -22,7 +22,6 @@ type ProjectLink = {
 export type ProjectsData = {
     title: string,
     summary: string,
-    informationTextHTML: null | ReactNode,
     deployLink: string | null,
     repoLink: string | null,
     links: ProjectLink[] | null,
@@ -32,4 +31,5 @@ export type ProjectsData = {
     relatedSkillsUID: string[] | null
     coverImage: string | null
     images: string[] | null,
+    informationTextHTML: null | ReactNode,
 }

@@ -19,7 +19,7 @@ const educations: { [key: string]: string }[] = educationsdata;
 
 export default function AboutSection() {
     return (
-        <div className={`${styles.contentContainer} content-container-width content-container-padding`} >
+        <section id="about" className={`${styles.contentContainer} content-container-width content-container-padding`} >
             <h2 className={`headding-loud`}>OM MIG</h2>
 
             <div className={`${styles.textContainer} `}>
@@ -81,7 +81,7 @@ export default function AboutSection() {
                 </section>
 
             </div>
-        </div >
+        </section >
 
     )
 }

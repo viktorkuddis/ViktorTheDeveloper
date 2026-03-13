@@ -10,7 +10,7 @@ import { ArrowRight } from 'lucide-react';
 export default function HeroSection() {
     return (
         <div className={`${styles.wrapper}`}>
-            <div className={`${styles.contentContainer} content-container-width content-container-padding`}>
+            <footer className={`${styles.contentContainer} content-container-width content-container-padding`}>
 
 
                 <div className={`${styles.imageArea}`}>
@@ -35,13 +35,16 @@ export default function HeroSection() {
                             flexDirection: "row",
                             gap: "0.75rem",
                             alignItems: "center"
+                        }} onClick={() => {
+                            window.location.hash = "";
+                            window.location.hash = "about"
                         }}>
                         <span>Mer om mig</span>
                         <ArrowRight style={{ height: "1rem", width: "1rem" }} />
 
                     </button>
                 </div>
-            </div>
+            </footer>
         </div>
 
     )

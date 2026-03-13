@@ -33,7 +33,7 @@ export default function ProjectsSection() {
     const [activeProject, setActiveProject] = useState<null | ProjectsData>(null);
 
     return (
-        <section className={`content-container-width content-container-padding ${styles.sectionContainer}`}>
+        <section id="projects" className={`content-container-width content-container-padding ${styles.sectionContainer}`}>
             <h2 className={`headding-loud`}>GREJER JAG GJORT</h2>
 
             <div className={`${styles.cardsContainer}`}>

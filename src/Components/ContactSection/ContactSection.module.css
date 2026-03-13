@@ -18,6 +18,7 @@
 .someContainer {
 
     margin-top: 2rem;
+    margin-bottom: 6rem;
 
     display: flex;
     justify-content: center;
@@ -55,44 +56,43 @@
 
 .backToTop {
 
-    margin-top: 2rem;
-    transform: scale(0.8) translateX(1rem) translateY(1rem);
-    color: black;
+    /* detta är alt initiala utseendet när knappen inte flyter. den ligger längst ner på sidan  */
+
+    /* när knappen sitter fast i layouten ligger den absolut  för att de inte layouten inte ska hoppa mellan flytande och fats knapp */
+    position: absolute;
+    left: 50%;
+    bottom: 3.5rem;
+    transform: scale(0.8) translateX(-60%);
+    /* background-color: aqua; */
+
+    color: var(--foreground-color-loud);
 
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 1rem;
-    padding: 1rem 0 0.5rem 0;
-
-    /* background-color: aqua; */
+    gap: 0.5rem;
+    padding: 1rem 1.5rem;
     width: max-content;
-    margin-left: auto;
 
     &:hover {
 
         cursor: pointer;
         text-decoration: underline;
     }
+
+
 }
 
 
 /* tablet och upp */
 @media (min-width: 426px) {
-
-
-    .backToTop {
-        margin-top: 2rem;
-
-    }
-
     .mail {
         font-size: 1.5rem;
     }
 
     .someContainer {
-
         margin-top: 3rem;
+        margin-bottom: 8rem;
 
         button {
 
@@ -104,4 +104,26 @@
             }
         }
     }
+
+    .backToTop {
+        bottom: 8rem;
+    }
+
+}
+
+
+
+.floatingButton {
+    position: fixed;
+
+    transform: scale(0.8);
+    bottom: 2rem;
+    left: unset;
+    right: 0rem;
+
+    background-color: var(--background-color-elevated);
+    box-shadow: 0 0 3px color-mix(in srgb, var(--foreground-color-regular) 50%, transparent 50%);
+    z-index: 1;
+
+    border-radius: 3rem;
 }

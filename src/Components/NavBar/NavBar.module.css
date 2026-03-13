@@ -30,6 +30,19 @@ nav ul {
     justify-content: center;
 }
 
+.nav a {
+    padding: 0.25rem 0;
+}
+
+.nav a:hover {
+    color: var(--foreground-color-loud);
+    /* text-decoration: none; */
+    text-decoration: wavy;
+    background-color: unset;
+    cursor: pointer;
+
+}
+
 /* tablet och uppåt */
 @media (min-width: 426px) {
 

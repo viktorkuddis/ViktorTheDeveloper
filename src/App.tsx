@@ -95,7 +95,7 @@ function App() {
         </div>}
         bannerType={"double"}
         repeatContent={10}
-        gap={"2rem"} link={"kontakt"} />
+        gap={"2rem"} link={"contact"} />
       < AboutSection />
       <ExperienceSection />
       <ProjectsSection />

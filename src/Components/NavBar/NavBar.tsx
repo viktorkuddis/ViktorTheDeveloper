@@ -8,13 +8,12 @@ export default function NavBar() {
             <header className={`${styles.container} content-container-width content-container-padding`}>
                 <p className={`headding-loud ${styles.logo}`}>VIKTOR.</p>
 
-                <nav>
+                <nav className={styles.nav}>
                     <ul>
-                        <li><a href="#">Hem</a></li>
-                        <li><a href="#">Om</a></li>
-                        <li><a href="#">Erfarenhet</a></li>
-                        <li><a href="#">Projekt</a></li>
-                        <li> <a href="#">Kontakt</a></li>
+                        <li><a href="#about">Om</a></li>
+                        <li><a href="#experience">Erfarenhet</a></li>
+                        <li><a href="#projects">Projekt</a></li>
+                        <li> <a href="#contact">Kontakt</a></li>
                     </ul>
                 </nav>
             </header>

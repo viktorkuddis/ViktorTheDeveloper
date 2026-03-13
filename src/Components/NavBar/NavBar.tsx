@@ -5,7 +5,7 @@ export default function NavBar() {
         <div className={`${styles.wrapper}`}>
 
 
-            <div className={`${styles.container} content-container-width content-container-padding`}>
+            <header className={`${styles.container} content-container-width content-container-padding`}>
                 <p className={`headding-loud ${styles.logo}`}>VIKTOR.</p>
 
                 <nav>
@@ -17,7 +17,7 @@ export default function NavBar() {
                         <li> <a href="#">Kontakt</a></li>
                     </ul>
                 </nav>
-            </div>
+            </header>
         </div>
 
 

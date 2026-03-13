@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import styles from "./ContactSection.module.css"
 
 import { ArrowUp } from 'lucide-react';
@@ -8,7 +9,27 @@ const mailadress = "viktor.kuddis";
 const domain = "hotmail.com"
 const at = "@"
 
+
+
+
 export default function ContactSection() {
+
+    const [scrollPercent, setScrollPercent] = useState<number>(0);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight;
+            const winHeight = window.innerHeight;
+            const scrollPercent = (scrollTop / (docHeight - winHeight)) * 100;
+
+            setScrollPercent(scrollPercent);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
 
     return (
 
@@ -20,8 +41,6 @@ export default function ContactSection() {
 
             <p>Skicka ett mail till:</p>
             <p className={styles.mail}>{mailadress}{at}{domain}</p>
-
-
 
             <div className={styles.someContainer}>
 
@@ -43,7 +62,7 @@ export default function ContactSection() {
             </div >
 
             <div onClick={() => window.scrollTo({ top: 0 })}
-                className={styles.backToTop}>
+                className={`${styles.backToTop} ${(scrollPercent > 5 && scrollPercent < 100) ? styles.floatingButton : ""}`}>
                 Tillbaka till toppen  <ArrowUp />
             </div>
 

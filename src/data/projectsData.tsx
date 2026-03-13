@@ -2,147 +2,89 @@
 import type { ProjectsData } from "../types/projectTypes"
 
 
-export const projectsData: ProjectsData[] = [{
-    title: "POC Personalplanerare (Koncepttest) 12435632486765",
-    summary: "Jag utforskar hur arbetspass kan visualiseras på en tidslinje och hur man kan interaggera med dem. Systemet ska även ge feedback i realtid. Detta är ett koncepttest(Proof of concept) av en större schemaläggningsapp. ",
-    informationTextHTML: "denna texten är bara en string ‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️",
-    deployLink: "https://poc-personalplanerare.netlify.app/",
-    repoLink: "https://github.com/viktorkuddis/POC-Personalplanerare",
-    links: null,
-    projectForm: "Solo",
-    projectContext: "Sidoprojekt",
-    label: ["Vilande (W.i.p.)"],
-    relatedSkillsUID: [
-        "F3C5E758-D00A-46F1-95B7-EAF566485F16",
-        "39F9E43C-7D3C-4A15-B526-BD0D6EC6D64A",
-        "BCC4D2F8-617E-4649-990A-E4FF27345A89",
-        "5543F5FF-8301-4F95-8F12-3EB2BD57DAFC"
-    ],
-    coverImage: "./images/projectImages/personalplanerare/omslag.jpg",
-    images: ["./images/projectImages/personalplanerare/screendump.jpg"]
-},
-{
-    title: "POC Personalplanerare (Koncepttest) med ganska mycket teck här. det är en lång rubrik",
-    summary: "Testar visualisera arbetspass. ",
-    informationTextHTML:
-        <>
-            HÄRÄR EN REACT NODE. hur blir det ?
-            <br />Här är en beskrivning av projektet. det är gansla lång beskrivning. okej här är det hu. detta är det som händer. låt mig förklara
-            <br />:Jag utforskar hur arbetspass kan visualiseras på en tidslinje och hur man kan interaggera med dem. Systemet ska även ge feedback i realtid. Detta är ett koncepttest(Proof of concept) av en större schemaläggningsapp. FÖrstår du ? Annars säger jag det en gång till <br /><br /> Kan man till ockmed göra en lista?
-            <ul><li>listitem här</li>
-                <li>en till sak att göra</li>
+export const projectsData: ProjectsData[] = [
+    {
+        title: "Redax Solo",
+        summary: "Redaktionellt verktyg byggt efter reella behov jag haft i jobbet som Studioreporter -a.k.a. Programledare. Systemet samlar och filtrerar nyheter i ett enhetligt flöde.",
+        deployLink: "https://redaxsolo.netlify.app/feed",
+        repoLink: "https://github.com/viktorkuddis/REDAX-SOLO",
+        links: null,
+        label: ["Vilande (W.i.p.)"],
+        projectForm: "Solo",
+        projectContext: "Sidoprojekt",
+        relatedSkillsUID:
+            [
+                "3A13375B-2D72-4DE9-80F7-B506A11A7BD7",
+                "F974373D-B250-4D75-9FA1-986DD1059265",
+                "BCC4D2F8-617E-4649-990A-E4FF27345A89", "5543F5FF-8301-4F95-8F12-3EB2BD57DAFC",
+            ],
+        coverImage: "./images/projectImages/redaxSolo/redaxSoloDarkMode.jpeg",
+        images:
+            [
+                "./images/projectImages/redaxSolo/redaxSoloDarkMode.jpeg",
+                "./images/projectImages/redaxSolo/RedaxSoloLightMode.jpeg"
+            ],
+        informationTextHTML: <>
+            <h3>Redaktionellt verktyg byggt efter reella behov i rollen som Studioreporter/Programledare</h3>
+            <h4>Problem:</h4>
+            <p><em>Som programledare på en radiokanal är en av arbetsuppgifterna att dagligen förbereda ett antal relevanta, intressanta eller underhållande “prator”/“spaningar” att fylla sändningen med – gärna med avstamp i dagens nyhetsläge.</em></p>
+            <p><em>Inför varje sändning behöver jag ett snabbt och smidigt sätt att uppdatera mig om det absolut senaste och mest relevanta för programmets målgrupp och geografiska kontext. Att planlöst klicka runt på olika sajter och dess undersidor - samtidigt som jag behövde värdera och sålla i innehållet - blev snabbt ohållbart.</em></p>
+            <p><em>Jag behövde ett enhetligt system där allt material kunde behandlas på ett och samma ställe, utan att byta fönster eller hoppa mellan flikar.</em></p>
+            <h4> Lösning:</h4>
+            <ul>
+                <li>Jag har skapat ett feed/flöde som snabbt summerar nyheter från utvalda källor i listform.</li>
+                <li>Användaren kan ta del av hela nyheten direkt i appen.</li>
+                <li>För en initial gallring finns filter tillgängliga baserade på ursprung, källtyp och källans egna kategoriseringssystem.</li>
             </ul>
-            okekj här: Jag utforskar hur arbetspass kan visualiseras på en tidslinje och hur man kan interaggera med dem. Systemet ska även ge feedback i realtid. Detta är ett koncepttest(Proof of concept) av en större schemaläggningsapp."
+            <h4>Just nu:</h4 >
+            <p><b>Systemet bygger initialt på Sveriges Radios nyheter, men ambitionen är att utöka det med SVT, de stora kvälls- och dagstidningarna samt viss nischmedia.</b></p>
+            <h4>Nästa steg:</h4>
+            <ul>
+                <li>Möjlighet att bearbeta nyheter och skriva manus direkt i systemet genom att spara och sortera intressanta artiklar.</li>
+                <li>Möjlighet att associera anteckningar/manusfiler till en artikel.</li>
+                <li><b>På längre sikt:</b><ul>
+                    <li>Integrera inlägg från nyhetskanalers Instagram-konton, då dessa ofta redan är filtrerade och sammanfattade i ett mer kompakt format än de fullständiga artikelflödena.</li>
+                </ul>
+                </li>
+            </ul>
         </>,
-    deployLink: "https://poc-personalplanerare.netlify.app/",
-    repoLink: "https://github.com/viktorkuddis/POC-Personalplanerare",
-    links: [{
-        linkTitle: "Detta är en länk",
-        link: "https://tinypng.com/",
     }, {
-        linkTitle: "Detta är en till länk",
-        link: "https://tinypng.com/",
-    }],
-    projectForm: null,
-    projectContext: null,
-    label: null,
-    relatedSkillsUID: [
-        "F3C5E758-D00A-46F1-95B7-EAF566485F16",
-        "39F9E43C-7D3C-4A15-B526-BD0D6EC6D64A",
-        "BCC4D2F8-617E-4649-990A-E4FF27345A89",
-        "5543F5FF-8301-4F95-8F12-3EB2BD57DAFC"
-    ],
-    coverImage: "./images/projectImages/personalplanerare/omslag.jpg",
-    images: ["./images/projectImages/personalplanerare/screendump.jpg", "./images/projectImages/personalplanerare/screendump.jpg", "./images/projectImages/personalplanerare/screendump.jpg", "./images/projectImages/personalplanerare/screendump.jpg", "./images/projectImages/personalplanerare/screendump.jpg"]
-}, {
-    title: "denna har ingen text i beskribningen",
-    summary: "ingen deploylink har denna . inte heller några bilder har den ",
-    informationTextHTML: null,
-    deployLink: null,
-    repoLink: "https://github.com/viktorkuddis/POC-Personalplanerare",
-    links: [{
-        linkTitle: "Detta är en länk",
-        link: "https://tinypng.com/",
-    }, {
-        linkTitle: "Detta är en till länk",
-        link: "https://tinypng.com/",
-    }],
-    projectForm: "Solo",
-    projectContext: "Sidoprojekt",
-    label: ["Vilande (W.i.p.)"],
-    relatedSkillsUID: [
-        "F3C5E758-D00A-46F1-95B7-EAF566485F16",
-        "39F9E43C-7D3C-4A15-B526-BD0D6EC6D64A",
-        "BCC4D2F8-617E-4649-990A-E4FF27345A89",
-        "5543F5FF-8301-4F95-8F12-3EB2BD57DAFC"
-    ],
-    coverImage: null,
-    images: null
-}, {
-    title: "Wodify",
-    summary: "Denna har inga tillhärande bilder men bara en omslagsbild. ingen deploylink har denna . inte heller några bilder men lite längre text ändå för att se hur de blir då ",
-    informationTextHTML: null,
-    deployLink: null,
-    repoLink: "https://github.com/viktorkuddis/POC-Personalplanerare",
-    links: [{
-        linkTitle: "Detta är en länk",
-        link: "https://tinypng.com/",
-    }, {
-        linkTitle: "Detta är en till länk",
-        link: "https://tinypng.com/",
-    }],
-    projectForm: "Solo",
-    projectContext: "Sidoprojekt",
-    label: ["Vilande (W.i.p.)", "Work in progress"],
-    relatedSkillsUID: [
-        "F3C5E758-D00A-46F1-95B7-EAF566485F16",
-        "39F9E43C-7D3C-4A15-B526-BD0D6EC6D64A",
-        "BCC4D2F8-617E-4649-990A-E4FF27345A89",
-        "5543F5FF-8301-4F95-8F12-3EB2BD57DAFC"
-    ],
-    coverImage: "https://www.aaha.org/wp-content/uploads/2024/09/kitten-lying-in-blanket.jpg",
-    images: null
-},
-{
-    title: "Redax Solo",
-    summary: "Redaktionellt verktyg byggt efter reella behov jag haft i jobbet som Studioreporter-aka Programledare. Systemet samlar och filtrerar nyheter i ett enhetligt flöde.",
-    informationTextHTML: <>
-        <h3>Redaktionellt verktyg byggt efter reella behov i rollen som Studioreporter/Programledare</h3>
-        <h4>Problem:</h4>
-        <p><em>Som programledare på en radiokanal är en av arbetsuppgifterna att dagligen förbereda ett antal relevanta, intressanta eller underhållande “prator”/“spaningar” att fylla sändningen med – gärna med avstamp i dagens nyhetsläge.</em></p>
-        <p><em>Inför varje sändning behöver jag ett snabbt och smidigt sätt att uppdatera mig om det absolut senaste och mest relevanta för programmets målgrupp och geografiska kontext. Att planlöst klicka runt på olika sajter och dess undersidor, samtidigt som jag behövde värdera och sålla i innehållet, blev snabbt ohållbart.</em></p>
-        <p><em>Jag behövde ett enhetligt system där allt material kunde behandlas på ett och samma ställe, utan att byta fönster eller hoppa mellan flikar.</em></p>
-        <h4> Lösning:</h4>
-        <ul>
-            <li>Jag har skapat ett feed/flöde som snabbt summerar nyheter från utvalda källor i listform.</li>
-            <li>Användaren kan ta del av hela nyheten direkt i appen.</li>
-            <li>För en initial gallring finns filter tillgängliga baserade på ursprung, källtyp och källans egna kategoriseringssystem.</li>
-        </ul>
-        <h4>Just nu:</h4 >
-        <p><b>Systemet bygger initialt på Sveriges Radios nyheter, men ambitionen är att utöka det med SVT, de stora kvälls- och dagstidningarna samt viss nischmedia.</b></p>
-        <h4>Nästa steg:</h4>
-        <ul>
-            <li>Möjlighet att bearbeta nyheter och skriva manus direkt i systemet genom att spara och sortera intressanta artiklar.</li>
-            <li>Möjlighet att associera anteckningar/manusfiler till en artikel.</li>
-            <li><b>På längre sikt:</b><ul>
-                <li>Integrera inlägg från nyhetskanalers Instagram-konton, då dessa ofta redan är filtrerade och sammanfattade i ett mer kompakt format än de fullständiga artikelflödena.</li>
+        title: "Quire -digitala anteckningsbok",
+        summary: "Skolprojekt där vi lärde oss samarbeta agilt enligt Scrum samtidigt som vi utvecklade en omfattande anteckningsapp i 100% Vanilla JavaScript utan ramverk. Man kan skapa, redigera, sortera, organisera och söka anteckningar.",
+        deployLink: "https://quire-norrland.netlify.app/",
+        repoLink: "https://github.com/viktorkuddis/Quire",
+        links: null,
+        label: null,
+        projectForm: "Grupp",
+        projectContext: "Skoluppgift",
+        relatedSkillsUID: [
+            "BCC4D2F8-617E-4649-990A-E4FF27345A89",
+            "79F2CC78-43F3-439F-A015-D55A5F12DBDC",
+            "5543F5FF-8301-4F95-8F12-3EB2BD57DAFC",
+            "9B38F406-C577-4165-931C-2E6A72EFC233",
+            "39F9E43C-7D3C-4A15-B526-BD0D6EC6D64A",
+            "5A59A4D4-4B49-4A5D-96F0-D79E32C1072E",
+            "BE9E4470-F5A5-4E20-AF05-4483F68C48F0",
+
+        ]
+        ,
+        coverImage: "images/projectImages/quire/omslag quire.png",
+        images: ["images/projectImages/quire/quireSearch.jpeg",
+            "images/projectImages/quire/quireEdit.jpeg"],
+        informationTextHTML: <>
+            <h3>Anteckningsbok byggd helt i Vanilla JavaScript</h3>
+            <p>Grupparbete med fokus på agil utveckling enligt Scrum. </p>
+            <p>Genom enveckorssprintar med standups, retrospektiv, sprintplaneringar och avstämningar med agil coach och product owners (våra lärare) blev vi introducerade till agila metoder, samtidigt som vi utvecklade en omfattande anteckningsapp i Vanilla JavaScript och CSS, helt utan ramverk.</p>
+            <p>Vi implementerade även spårningskod för Google Analytics.</p>
+            <p><b>Funktioner:</b></p>
+            <ul>
+                <li>Skapa, redigera och ta bort anteckningar.</li>
+                <li>Formatera text</li>
+                <li>Organisera anteckningar med taggar</li>
+                <li>Lägga till och ta bort bilder.</li>
+                <li>Favoritmarkera anteckningar</li>
+                <li>Söka anteckningar via taggar eller fritext</li>
             </ul>
-            </li>
-        </ul>
-    </>,
-    deployLink: "https://redaxsolo.netlify.app/feed",
-    repoLink: "https://github.com/viktorkuddis/REDAX-SOLO",
-    links: [{
-        linkTitle: "RAPPORT: Examensarbete, Viktor  Magnusson ",
-        link: "https://www.google.com/"
-    }, {
-        linkTitle: "se en bild på en söt katt",
-        link: "https://www.aaha.org/wp-content/uploads/2024/09/kitten-lying-in-blanket.jpg"
-    }],
-    label: ["Vilande (W.i.p.)"],
-    projectForm: "Solo",
-    projectContext: "Sidoprojekt",
-    relatedSkillsUID: ["Rest API XXX", "Bootstrap XXX", "BCC4D2F8-617E-4649-990A-E4FF27345A89", "5543F5FF-8301-4F95-8F12-3EB2BD57DAFC",],
-    coverImage: "./images/projectImages/redaxSolo/redaxSoloDarkMode.jpeg",
-    images: ["./images/projectImages/redaxSolo/redaxSoloDarkMode.jpeg", "./images/projectImages/redaxSolo/RedaxSoloLightMode.jpeg"]
-}]
+        </>
+    }
+]

@@ -71,6 +71,9 @@
 
     .imageContainer {
 
+        /* background-color: red; */
+        align-content: center;
+
 
         &:hover {
             transform: scale(1.02);

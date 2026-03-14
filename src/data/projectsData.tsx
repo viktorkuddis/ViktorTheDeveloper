@@ -14,9 +14,11 @@ export const projectsData: ProjectsData[] = [
         projectContext: "Sidoprojekt",
         relatedSkillsUID:
             [
-                "3A13375B-2D72-4DE9-80F7-B506A11A7BD7",
+                "F3C5E758-D00A-46F1-95B7-EAF566485F16",
                 "F974373D-B250-4D75-9FA1-986DD1059265",
-                "BCC4D2F8-617E-4649-990A-E4FF27345A89", "5543F5FF-8301-4F95-8F12-3EB2BD57DAFC",
+                "BCC4D2F8-617E-4649-990A-E4FF27345A89",
+                "3A13375B-2D72-4DE9-80F7-B506A11A7BD7",
+                "5543F5FF-8301-4F95-8F12-3EB2BD57DAFC",
             ],
         coverImage: "./images/projectImages/redaxSolo/redaxSoloDarkMode.jpeg",
         images:
@@ -50,6 +52,103 @@ export const projectsData: ProjectsData[] = [
         </>,
     },
     {
+        title: "POC Personalplanerare (Koncepttest)",
+        summary: "Jag utforskar hur arbetspass kan visualiseras på en tidslinje och hur man kan interaggera med dem. Systemet ska även ge feedback i realtid. Detta är ett koncepttest(Proof of concept) av en större schemaläggningsapp.",
+        deployLink: "https://poc-personalplanerare.netlify.app/",
+        repoLink: "https://github.com/viktorkuddis/POC-Personalplanerare",
+        links: null,
+        label: ["Vilande (W.i.p.)"],
+        projectForm: "Solo",
+        projectContext: null,
+        relatedSkillsUID: [
+            "F3C5E758-D00A-46F1-95B7-EAF566485F16", //react
+            "39F9E43C-7D3C-4A15-B526-BD0D6EC6D64A", // css
+            "BCC4D2F8-617E-4649-990A-E4FF27345A89", //Javascript
+            "5543F5FF-8301-4F95-8F12-3EB2BD57DAFC", //git
+        ],
+        coverImage: "/images/projectImages/personalplanerare/omslag.jpg",
+        images: [
+            "/images/projectImages/personalplanerare/omslag.jpg",
+            "/images/projectImages/personalplanerare/screendump.jpg",
+        ],
+        informationTextHTML: undefined
+    },
+    {
+        title: "Rentapalooza",
+        summary: "Uthyrningsplattform byggd med Vue och Express. Här kan användare hyra och hyra ut prylar. Projektet utvecklades agilt i grupp enligt Scrum.",
+        deployLink: "https://rentapalooza.netlify.app/",
+        repoLink: "https://github.com/viktorkuddis/rentapalooza",
+        links: null,
+        label: null,
+        projectForm: "Grupp",
+        projectContext: "Skoluppgift",
+        relatedSkillsUID: [
+            "C76D42CF-9A1B-49AC-BF85-E1B590D79DC8",// vue
+            "79F2CC78-43F3-439F-A015-D55A5F12DBDC", //scrum
+            "39F9E43C-7D3C-4A15-B526-BD0D6EC6D64A", // css
+            "5543F5FF-8301-4F95-8F12-3EB2BD57DAFC", //git
+            "9B38F406-C577-4165-931C-2E6A72EFC233", //jira
+            "3A13375B-2D72-4DE9-80F7-B506A11A7BD7", //rest
+            "BCC4D2F8-617E-4649-990A-E4FF27345A89", //Javascript
+            "2D5175FC-8EE9-49F9-B0E2-D1CF6A13E6D8", //express
+            "ADEE5881-9E84-4F0C-ABCD-6A6EB81CE982", //node
+            "5A59A4D4-4B49-4A5D-96F0-D79E32C1072E", //Agila metoder
+        ],
+        coverImage: "/images/projectImages/rentapalooza/rentCover.jpeg",
+        images: [
+            "/images/projectImages/rentapalooza/rentStart.jpeg",
+            "/images/projectImages/rentapalooza/rentProfile.jpeg",
+            "/images/projectImages/rentapalooza/rentListings.jpeg",
+        ],
+        informationTextHTML: <>
+            <h3>
+                Uthyrningsplattform byggd med Vue och Express.
+            </h3>
+            <p>Detta är ett gruppprojekt där vi arbetade enligt Scrum i enveckorssprintar med standups, sprintplanering, retrospektiv och avstämningar med Product Owners (våra lärare).</p>
+            <p>Plattformens upplägg är inspirerat av <a href="https://www.hygglo.se/">hygglo.se</a>, där användare både kan hyra och hyra ut diverse prylar.</p>
+            <p>Förutom uthyrningsfunktionalitet kan användare även skapa en profil och få recensioner.</p>
+        </>
+    },
+    {
+        title: "Aurora-Agile",
+        summary: "Projekt där vi arbetade agilt enligt Scrum för att tillsammans utveckla en kanbanboard i React. Appen bygger på erfarenheter och lärdomar från våra tidigare individuella kanbanboards.",
+        deployLink: "https://auroraagile.netlify.app/",
+        repoLink: "https://github.com/viktorkuddis/Aurora-Agile",
+        links: null,
+        label: null,
+        projectForm: "Grupp",
+        projectContext: "Skoluppgift",
+        relatedSkillsUID: [
+            "F3C5E758-D00A-46F1-95B7-EAF566485F16", //react
+            "79F2CC78-43F3-439F-A015-D55A5F12DBDC", //scrum
+            "F974373D-B250-4D75-9FA1-986DD1059265", //bootstrap
+            "5543F5FF-8301-4F95-8F12-3EB2BD57DAFC", //git
+            "9B38F406-C577-4165-931C-2E6A72EFC233", //jira
+            "BCC4D2F8-617E-4649-990A-E4FF27345A89", //Javascript
+            "5A59A4D4-4B49-4A5D-96F0-D79E32C1072E", //Agila metoder
+        ],
+        coverImage: "/images/projectImages/auroraAgile/AuroraLogoSplitColor.jpeg",
+        images: [
+            "/images/projectImages/auroraAgile/AuroraLogoSplitColor.jpeg",
+            "/images/projectImages/auroraAgile/auroraBoard.jpeg",
+            "/images/projectImages/auroraAgile/auroraModal.jpeg",
+            "/images/projectImages/auroraAgile/auroraBranding.jpeg",
+
+        ],
+        informationTextHTML: <>
+            <h3>Kanbanboard med React och Bootstrap</h3>
+            <p>Gruppprojekt med fokus på agil utveckling enligt Scrum.</p>
+            <p>Projektet genomfördes i enveckorssprintar med standups, sprintplanering, retrospektiv och avstämningar med Product Owners (våra lärare). Appen bygger vidare på erfarenheter från våra tidigare individuella kanbanboards.</p>
+            <p>Vi tog även fram en gemensam färgprofil och utmanade oss att använda Bootstrap och dess utility-klasser i så stor utsträckning som möjligt.</p>
+            <ul>
+                <li>Kolumner kan läggas till, ändras och tas bort.</li>
+                <li>Kort kan dras mellan kolumner, redigeras och tas bort.</li>
+                <li>Kort kan tilldelas en eller flera teammedlemmar.</li>
+                <li>Kort kan filtreras baserat på teammedlem.</li>
+            </ul>
+        </>
+    },
+    {
         title: "Kanban Board",
         summary: "Kanban board med fritt antal anpassningsbara kolumner, där korten ärver kolumnens inställningar. Både kort och kolumner har unika URL:er.",
         deployLink: "https://theboardapp.netlify.app/",
@@ -65,7 +164,10 @@ export const projectsData: ProjectsData[] = [
             "5543F5FF-8301-4F95-8F12-3EB2BD57DAFC"
         ],
         coverImage: "images/projectImages/kanbanboard/kbCover.jpeg",
-        images: ["images/projectImages/kanbanboard/kbColumns.jpeg", "images/projectImages/kanbanboard/kbSettings.jpeg", "images/projectImages/kanbanboard/kbCard.jpeg"],
+        images: [
+            "images/projectImages/kanbanboard/kbColumns.jpeg",
+            "images/projectImages/kanbanboard/kbSettings.jpeg",
+            "images/projectImages/kanbanboard/kbCard.jpeg"],
         informationTextHTML: <>
             <h3>Kanbanboard byggd i React</h3>
             <p>Kanbanboard byggd i React där jag utforskar komponentbaserad UI,
@@ -96,7 +198,10 @@ export const projectsData: ProjectsData[] = [
             "5543F5FF-8301-4F95-8F12-3EB2BD57DAFC"
         ],
         coverImage: "images/projectImages/theDashboard/tdbCover.jpeg",
-        images: ["images/projectImages/theDashboard/tdbGrass.jpeg", "images/projectImages/theDashboard/tdbWater.jpeg"],
+        images: [
+            "images/projectImages/theDashboard/tdbGrass.jpeg",
+            "images/projectImages/theDashboard/tdbWater.jpeg"
+        ],
         informationTextHTML: <>
             <h3>Dashboard byggd helt i Vanilla JavaScript</h3>
             <p>
@@ -113,7 +218,7 @@ export const projectsData: ProjectsData[] = [
         </>
     },
     {
-        title: "Quire -digital anteckningsbok",
+        title: "Quire - digital anteckningsbok",
         summary: "Skolprojekt där vi lärde oss samarbeta agilt enligt Scrum samtidigt som vi utvecklade en omfattande anteckningsapp i 100% Vanilla JavaScript utan ramverk. Man kan skapa, redigera, sortera, organisera och söka anteckningar.",
         deployLink: "https://quire-norrland.netlify.app/",
         repoLink: "https://github.com/viktorkuddis/Quire",
@@ -133,8 +238,10 @@ export const projectsData: ProjectsData[] = [
         ]
         ,
         coverImage: "images/projectImages/quire/omslag quire.png",
-        images: ["images/projectImages/quire/quireSearch.jpeg",
-            "images/projectImages/quire/quireEdit.jpeg"],
+        images: [
+            "images/projectImages/quire/quireSearch.jpeg",
+            "images/projectImages/quire/quireEdit.jpeg"
+        ],
         informationTextHTML: <>
             <h3>Anteckningsbok byggd helt i Vanilla JavaScript</h3>
             <p>Grupparbete med fokus på agil utveckling enligt Scrum. </p>
@@ -151,6 +258,4 @@ export const projectsData: ProjectsData[] = [
             </ul>
         </>
     }
-
-
 ]

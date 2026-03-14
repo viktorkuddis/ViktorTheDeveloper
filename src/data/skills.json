@@ -100,9 +100,19 @@
             "imgSrc": "/images/Jira.png"
         },
         {
-            "title": "",
-            "uid": "",
-            "imgSrc": ""
+            "title": "Express",
+            "uid": "2D5175FC-8EE9-49F9-B0E2-D1CF6A13E6D8",
+            "imgSrc": "/images/express.png"
+        },
+        {
+            "title": "Node",
+            "uid": "ADEE5881-9E84-4F0C-ABCD-6A6EB81CE982",
+            "imgSrc": "/images/Node.png"
+        },
+        {
+            "title": "Vue",
+            "uid": "C76D42CF-9A1B-49AC-BF85-E1B590D79DC8",
+            "imgSrc": "/images/Vue.png"
         },
         {
             "title": "",

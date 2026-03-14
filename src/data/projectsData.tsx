@@ -50,6 +50,36 @@ export const projectsData: ProjectsData[] = [
         </>,
     },
     {
+        title: "Kanban Board",
+        summary: "Kanban board med fritt antal anpassningsbara kolumner, där korten ärver kolumnens inställningar. Både kort och kolumner har unika URL:er.",
+        deployLink: "https://theboardapp.netlify.app/",
+        repoLink: "https://github.com/viktorkuddis/TheBoardApp",
+        links: null,
+        label: null,
+        projectForm: "Solo",
+        projectContext: "Skoluppgift",
+        relatedSkillsUID: [
+            "F3C5E758-D00A-46F1-95B7-EAF566485F16",
+            "39F9E43C-7D3C-4A15-B526-BD0D6EC6D64A",
+            "BCC4D2F8-617E-4649-990A-E4FF27345A89",
+            "5543F5FF-8301-4F95-8F12-3EB2BD57DAFC"
+        ],
+        coverImage: "images/projectImages/kanbanboard/kbCover.jpeg",
+        images: ["images/projectImages/kanbanboard/kbColumns.jpeg", "images/projectImages/kanbanboard/kbSettings.jpeg", "images/projectImages/kanbanboard/kbCard.jpeg"],
+        informationTextHTML: <>
+            <h3>Kanbanboard byggd i React</h3>
+            <p>Kanbanboard byggd i React där jag utforskar komponentbaserad UI,
+                state-hantering och reaktivitet. <br />
+                All data hanteras lokalt i localStorage.</p>
+            <ul>
+                <li>Valfritt antal kolumner med anpassningsbara namn.</li>
+                <li>Varje kolumns färg och beteende kan justeras. Detta påverkar i sin tur kortens utseende.</li>
+                <li>Både kort och kolumner har unika URL:er.</li>
+            </ul>
+
+        </>
+    },
+    {
         title: "The Dashboard",
         summary: "Dashboard byggd i vanilla JavaScript. Sparar aktivitet via Local Storage och hämtar data från olika API:er.",
         deployLink: "https://viktorkuddis.github.io/Individuellt_projekt_The_Dashboard/",
@@ -120,20 +150,7 @@ export const projectsData: ProjectsData[] = [
                 <li>Söka anteckningar via taggar eller fritext</li>
             </ul>
         </>
-    },
-    {
-        title: "",
-        summary: "",
-        deployLink: null,
-        repoLink: null,
-        links: null,
-        label: null,
-        projectForm: null,
-        projectContext: null,
-        relatedSkillsUID: null,
-        coverImage: null,
-        images: null,
-        informationTextHTML: undefined
-    },
+    }
+
 
 ]

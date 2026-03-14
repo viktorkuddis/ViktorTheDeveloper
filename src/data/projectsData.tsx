@@ -68,7 +68,7 @@ export const projectsData: ProjectsData[] = [
         ],
         coverImage: "/images/projectImages/personalplanerare/omslag.jpg",
         images: [
-            "/images/projectImages/personalplanerare/omslag.jpg",
+            // "/images/projectImages/personalplanerare/omslag.jpg",
             "/images/projectImages/personalplanerare/screendump.jpg",
         ],
         informationTextHTML: undefined

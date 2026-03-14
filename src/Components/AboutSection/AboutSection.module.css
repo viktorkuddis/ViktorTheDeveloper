@@ -7,6 +7,18 @@
 .textContainer {
     /* background-color: lightblue; */
     padding-left: 5%;
+
+    p {
+        margin-bottom: 0.7rem;
+    }
+}
+
+.kompetenserComplete {
+    p {
+        line-height: normal;
+        margin-bottom: unset
+    }
+
 }
 
 .skillsAndEducations {

@@ -48,8 +48,72 @@ export const projectsData: ProjectsData[] = [
                 </li>
             </ul>
         </>,
-    }, {
-        title: "Quire -digitala anteckningsbok",
+    },
+    {
+        title: "Kanban Board",
+        summary: "Kanban board med fritt antal anpassningsbara kolumner, där korten ärver kolumnens inställningar. Både kort och kolumner har unika URL:er.",
+        deployLink: "https://theboardapp.netlify.app/",
+        repoLink: "https://github.com/viktorkuddis/TheBoardApp",
+        links: null,
+        label: null,
+        projectForm: "Solo",
+        projectContext: "Skoluppgift",
+        relatedSkillsUID: [
+            "F3C5E758-D00A-46F1-95B7-EAF566485F16",
+            "39F9E43C-7D3C-4A15-B526-BD0D6EC6D64A",
+            "BCC4D2F8-617E-4649-990A-E4FF27345A89",
+            "5543F5FF-8301-4F95-8F12-3EB2BD57DAFC"
+        ],
+        coverImage: "images/projectImages/kanbanboard/kbCover.jpeg",
+        images: ["images/projectImages/kanbanboard/kbColumns.jpeg", "images/projectImages/kanbanboard/kbSettings.jpeg", "images/projectImages/kanbanboard/kbCard.jpeg"],
+        informationTextHTML: <>
+            <h3>Kanbanboard byggd i React</h3>
+            <p>Kanbanboard byggd i React där jag utforskar komponentbaserad UI,
+                state-hantering och reaktivitet. <br />
+                All data hanteras lokalt i localStorage.</p>
+            <ul>
+                <li>Valfritt antal kolumner med anpassningsbara namn.</li>
+                <li>Varje kolumns färg och beteende kan justeras. Detta påverkar i sin tur kortens utseende.</li>
+                <li>Både kort och kolumner har unika URL:er.</li>
+            </ul>
+
+        </>
+    },
+    {
+        title: "The Dashboard",
+        summary: "Dashboard byggd i vanilla JavaScript. Sparar aktivitet via Local Storage och hämtar data från olika API:er.",
+        deployLink: "https://viktorkuddis.github.io/Individuellt_projekt_The_Dashboard/",
+        repoLink: "https://github.com/viktorkuddis/Individuellt_projekt_The_Dashboard",
+        links: null,
+        label: null,
+        projectForm: "Solo",
+        projectContext: "Skoluppgift",
+        relatedSkillsUID: [
+            "BCC4D2F8-617E-4649-990A-E4FF27345A89",
+            "3A13375B-2D72-4DE9-80F7-B506A11A7BD7",
+            "BE9E4470-F5A5-4E20-AF05-4483F68C48F0",
+            "39F9E43C-7D3C-4A15-B526-BD0D6EC6D64A",
+            "5543F5FF-8301-4F95-8F12-3EB2BD57DAFC"
+        ],
+        coverImage: "images/projectImages/theDashboard/tdbCover.jpeg",
+        images: ["images/projectImages/theDashboard/tdbGrass.jpeg", "images/projectImages/theDashboard/tdbWater.jpeg"],
+        informationTextHTML: <>
+            <h3>Dashboard byggd helt i Vanilla JavaScript</h3>
+            <p>
+                I detta projekt övade vi på att bygga fungerande UI med enbart Vanilla JavaScript och CSS, helt utan ramverk, samt att hämta data från API:er.
+                <br />Dashboarden håller koll på användarens aktivitet med Local Storage som databas.
+            </p>
+            <p>
+                Implementerade även spårningskod för Google Analytics.</p>
+            <ul>
+                <li>Användaren kan skriva och spara anteckningar och bokmärken till webbsidor.</li>
+                <li>Appen hämtar aktuell väderdata baserat på användarens plats via ett väder-API och genererar bakgrundsbilder genom Unsplashs bild-API.</li>
+                <li>Användaren kan få sällskap av en liten kompanjon genom att välja en Pokémon “buddy”, som hämtas från det öppna Pokémon-API:et.</li>
+            </ul>
+        </>
+    },
+    {
+        title: "Quire -digital anteckningsbok",
         summary: "Skolprojekt där vi lärde oss samarbeta agilt enligt Scrum samtidigt som vi utvecklade en omfattande anteckningsapp i 100% Vanilla JavaScript utan ramverk. Man kan skapa, redigera, sortera, organisera och söka anteckningar.",
         deployLink: "https://quire-norrland.netlify.app/",
         repoLink: "https://github.com/viktorkuddis/Quire",
@@ -87,4 +151,6 @@ export const projectsData: ProjectsData[] = [
             </ul>
         </>
     }
+
+
 ]

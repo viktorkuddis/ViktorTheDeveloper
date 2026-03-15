@@ -40,7 +40,7 @@
 
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
 
     h1,
     h2,
@@ -48,6 +48,11 @@
     h4 {
         word-break: break-word;
         hyphens: auto
+    }
+
+    /* tablet och upp */
+    @media (min-width: 426px) {
+        gap: 1.5rem;
     }
 
     .imageSection {
@@ -134,7 +139,8 @@
         /* background-color: aquamarine; */
         display: flex;
         flex-wrap: wrap;
-        gap: 0.5rem
+        gap: 0.5rem;
+        margin-top: 0.5rem;
     }
 
     .iconButton {
@@ -182,6 +188,7 @@
         @media (min-width: 426px) {
             padding: 1rem 1.5rem;
 
+
             .link {
                 gap: 0.5rem;
             }
@@ -196,20 +203,23 @@
 
         /* flex-direction: column; */
         flex-wrap: wrap;
-        gap: 0.5rem 1.5rem;
+        gap: 0.5rem 1rem;
+
+        font-size: smaller;
 
         .skill {
             /* background-color: aqua; */
             display: flex;
             justify-content: center;
             align-items: center;
-
             gap: 0.25rem;
             flex-shrink: 0;
 
 
             .skillicon {
                 height: 1.25rem;
+                /* height: 3rem; */
+
             }
         }
     }

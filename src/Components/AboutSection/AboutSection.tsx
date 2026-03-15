@@ -19,11 +19,15 @@ const educations: { [key: string]: string }[] = educationsdata;
 
 export default function AboutSection() {
     return (
-        <div className={`${styles.contentContainer} content-container-width content-container-padding`} >
+        <section id="about" className={`${styles.contentContainer} content-container-width content-container-padding`} >
             <h2 className={`headding-loud`}>OM MIG</h2>
 
             <div className={`${styles.textContainer} `}>
-                <p>{aboutText.text} </p>
+                {/* <p>{aboutText.text} </p> */}
+
+                {aboutText.text.split("\n").map((line: string, i: number) => (
+                    <p key={i}>{line as string}</p>
+                ))}
 
                 <div className={`${styles.skillsAndEducations}`}>
                     <section style={{ flexGrow: "1" }}>
@@ -73,7 +77,7 @@ export default function AboutSection() {
 
                 </div>
 
-                <section style={{ lineHeight: "normal" }}>
+                <section className={styles.kompetenserComplete}>
                     <small>
                         <p><b>Kompetenser</b></p>
                         <p>{skills.allSkills}</p>
@@ -81,7 +85,7 @@ export default function AboutSection() {
                 </section>
 
             </div>
-        </div >
+        </section >
 
     )
 }

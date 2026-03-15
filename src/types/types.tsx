@@ -9,3 +9,10 @@ export type ExperienceType = {
     descriptionText: string,
     descriptionBulletPoints: string[]
 }
+
+export type SkillType = {
+    title: string,
+    uid: string,
+    imgSrc: string
+}
+

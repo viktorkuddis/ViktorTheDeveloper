@@ -14,9 +14,9 @@ export default function ExperienceSection() {
 
     {/* Här byggs på med komponenter för varje erfarenhet.
             Den är blå om den är current true.
-            För enlast sortering = Det staplas i den ordning den ligger i arrayen. Inte enligt tid. */}
+            För ennkast sortering = Det staplas i den ordning den ligger i arrayen. Inte enligt tid. */}
 
-    return (<section className={`${styles.experienceSection}`}>
+    return (<section id="experience" className={`${styles.experienceSection}`}>
         <div className="content-container-width content-container-padding">
             <h2 className={`headding-loud-inverted ${styles.heading}`}>
                 ERFARENHET

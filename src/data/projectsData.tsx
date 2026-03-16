@@ -20,26 +20,13 @@ export const projectsData: ProjectsData[] = [
             "F3C5E758-D00A-46F1-95B7-EAF566485F16", //react
             "39F9E43C-7D3C-4A15-B526-BD0D6EC6D64A", // css
             "BCC4D2F8-617E-4649-990A-E4FF27345A89", //Javascript
-            "5543F5FF-8301-4F95-8F12-3EB2BD57DAFC", //git
             "3A13375B-2D72-4DE9-80F7-B506A11A7BD7", //rest
-
             "C9DFB7AE-ABDD-4C75-9DB9-153F91DE5F4D",// mongodb
+            "5543F5FF-8301-4F95-8F12-3EB2BD57DAFC", //git
             "9B38F406-C577-4165-931C-2E6A72EFC233", //jira
-            "BCC4D2F8-617E-4649-990A-E4FF27345A89", //Javascript
-
-
             "8AC56FE3-C8DD-413A-9D5F-D7192A0035B1",// Clerk
-
             "2D5175FC-8EE9-49F9-B0E2-D1CF6A13E6D8", //express
-
             "ADEE5881-9E84-4F0C-ABCD-6A6EB81CE982", //node
-
-
-
-
-
-
-
         ],
         coverImage: "/images/projectImages/examensarbete/omslag.jpeg",
         images: [

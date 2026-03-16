@@ -75,7 +75,7 @@
     .tagsContainer {
         /* background-color: aqua; */
         display: flex;
-        gap: 0.30rem;
+        gap: 0.25rem;
         flex-wrap: wrap;
 
         .tag {
@@ -83,7 +83,7 @@
             border: 1px solid color-mix(in srgb, var(--foreground-color-regular) 50%, transparent 50%);
             color: var(--foreground-color-loud);
             padding: 0.1rem 0.3rem;
-            margin-right: 0.25rem;
+
             border-radius: 0.25rem;
             font-size: x-small;
             display: inline-block;
@@ -175,8 +175,8 @@
 
             line-clamp: 3;
             -webkit-line-clamp: 3;
-            line-clamp: 2;
-            -webkit-line-clamp: 2;
+            /* line-clamp: 2;
+            -webkit-line-clamp: 2; */
         }
 
 

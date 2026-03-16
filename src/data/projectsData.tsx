@@ -4,6 +4,23 @@ import type { ProjectsData } from "../types/projectTypes"
 
 export const projectsData: ProjectsData[] = [
     {
+        title: "Examensarbete:",
+        summary: "",
+        deployLink: null,
+        repoLink: null,
+        links: [{
+            linkTitle: "RAPPORT: Examensarbete, Viktor Magnusson.pdf",
+            link: "https://drive.google.com/file/d/1VSWUr6iKGKmwaTQ7XJDYCyHsZF-If8_w/view?usp=sharing"
+        }],
+        label: ["EXAMENSARBETE"],
+        projectForm: "Solo",
+        projectContext: null,
+        relatedSkillsUID: null,
+        coverImage: "/images/projectImages/examensarbete/omslag.jpg",
+        images: null,
+        informationTextHTML: undefined
+    },
+    {
         title: "Redax Solo",
         summary: "Redaktionellt verktyg byggt efter reella behov jag haft i jobbet som Studioreporter -a.k.a. Programledare. Systemet samlar och filtrerar nyheter i ett enhetligt flöde.",
         deployLink: "https://redaxsolo.netlify.app/feed",

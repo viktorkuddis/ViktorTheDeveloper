@@ -3,6 +3,7 @@ import type { ReactNode } from "react"
 type ProjectLabel =
     | "Work in progress"
     | "Vilande (W.i.p.)"
+    | "EXAMENSARBETE"
 
 type ProjectForm =
     | "Grupp"

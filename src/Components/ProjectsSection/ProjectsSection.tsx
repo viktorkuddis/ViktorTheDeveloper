@@ -123,6 +123,7 @@ export default function ProjectsSection() {
                                     <a key={i}
                                         className={styles.link}
                                         href={link.link}
+                                        target="_blank"
                                     >
                                         <Link className={styles.linkIcon} />
                                         {link.linkTitle}

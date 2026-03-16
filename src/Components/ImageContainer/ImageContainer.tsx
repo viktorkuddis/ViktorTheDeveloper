@@ -10,10 +10,11 @@ type props = {
     borderRadius: "none" | "xsmall" | "small" | "large" | "medium"
     width?: string
     height?: string
+    maxHeight?: string,
     aspectRatio?: string
 }
 
-export default function ImageContainer({ src, alt, borderRadius, width, height, aspectRatio }: props) {
+export default function ImageContainer({ src, alt, borderRadius, width, height, maxHeight, aspectRatio }: props) {
 
 
     return (
@@ -21,6 +22,7 @@ export default function ImageContainer({ src, alt, borderRadius, width, height, 
 
             width: width,
             height: height,
+            maxHeight: maxHeight,
             aspectRatio: aspectRatio,
 
             borderRadius:

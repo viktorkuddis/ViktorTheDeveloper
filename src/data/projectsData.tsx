@@ -16,8 +16,23 @@ export const projectsData: ProjectsData[] = [
         projectForm: "Solo",
         projectContext: null,
         relatedSkillsUID: null,
-        coverImage: "/images/projectImages/examensarbete/omslag.jpg",
-        images: null,
+        coverImage: "/images/projectImages/examensarbete/omslag.jpeg",
+        images: [
+            "/images/projectImages/examensarbete/omslag.jpeg",
+            "/images/projectImages/examensarbete/startFilled.jpeg",
+
+            "/images/projectImages/examensarbete/connectToEvent.jpeg",
+            // "/images/projectImages/examensarbete/connectyToEvent2.jpeg",
+            // "/images/projectImages/examensarbete/createEvent1.jpeg",
+            "/images/projectImages/examensarbete/createEvent2.jpeg",
+            // "/images/projectImages/examensarbete/editActivity.jpeg",
+            // "/images/projectImages/examensarbete/feed.jpeg",
+            "/images/projectImages/examensarbete/feedFilled.jpeg",
+            "/images/projectImages/examensarbete/notification.jpeg",
+            "/images/projectImages/examensarbete/rapport.jpeg",
+            // "/images/projectImages/examensarbete/start.jpeg",
+
+        ],
         informationTextHTML: undefined
     },
     {

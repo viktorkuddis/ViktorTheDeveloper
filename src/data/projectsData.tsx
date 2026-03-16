@@ -158,7 +158,7 @@ export const projectsData: ProjectsData[] = [
         links: null,
         label: ["Vilande (W.i.p.)"],
         projectForm: "Solo",
-        projectContext: null,
+        projectContext: "Sidoprojekt",
         relatedSkillsUID: [
             "F3C5E758-D00A-46F1-95B7-EAF566485F16", //react
             "39F9E43C-7D3C-4A15-B526-BD0D6EC6D64A", // css

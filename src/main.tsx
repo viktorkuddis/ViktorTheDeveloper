@@ -9,8 +9,6 @@ import App from './App.tsx'
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     {/* Base UIs root */}
-
-
     <div className="root">
       <App />
     </div>

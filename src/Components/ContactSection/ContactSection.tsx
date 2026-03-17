@@ -5,7 +5,7 @@ import { ArrowUp } from 'lucide-react';
 
 
 
-const mailadress = "viktor.kuddis";
+const mailadress = "v_magnusson";
 const domain = "hotmail.com"
 const at = "@"
 

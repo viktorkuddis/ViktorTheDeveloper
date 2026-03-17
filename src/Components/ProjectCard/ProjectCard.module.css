@@ -81,7 +81,7 @@
         .tag {
 
             border: 1px solid color-mix(in srgb, var(--foreground-color-regular) 50%, transparent 50%);
-            color: var(--foreground-color-loud);
+            color: var(--foreground-color-regular);
             padding: 0.1rem 0.3rem;
 
             border-radius: 0.25rem;

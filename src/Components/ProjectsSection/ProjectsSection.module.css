@@ -58,6 +58,7 @@
     .imageSection {
         display: grid;
         grid-template-columns: repeat(2, auto);
+        /* grid-auto-rows: minmax(10px, 20rem); */
         row-gap: 0.5rem;
 
         padding: 1rem 0;
@@ -69,6 +70,11 @@
             grid-template-columns: repeat(3, auto);
             margin: 0 auto;
 
+            @media (min-width: 640px) {
+                grid-template-columns: repeat(4, auto);
+
+            }
+
         }
 
     }
@@ -78,6 +84,7 @@
 
         /* background-color: red; */
         align-content: center;
+
 
 
         &:hover {
@@ -109,29 +116,36 @@
 
     }
 
-    /* tunga taggar */
+
     .tag {
-        /* border: 1px solid color-mix(in srgb, var(--foreground-color-regular) 30%, transparent 70%); */
-        color: var(--foreground-color-regular);
-        background-color: color-mix(in srgb, var(--foreground-color-regular) 66%, transparent 33%);
-        color: white;
-        padding: 0rem 0.75rem;
+        padding: 0rem 0.5rem;
         border-radius: 0.25rem;
         font-size: 0.9rem;
         flex-shrink: 0;
-        /* inline block för att den inte ska brytas mitt i då den är en span . */
     }
+
+    /* tunga taggar */
+    /* .tag {
+        color: var(--foreground-color-regular);
+        background-color: color-mix(in srgb, var(--foreground-color-regular) 66%, transparent 33%);
+        color: white;
+    } */
 
     /* lätta taggar: */
     /* .tag {
         border: 1px solid color-mix(in srgb, var(--foreground-color-regular) 30%, transparent 70%);
         color: var(--foreground-color-regular);
         background-color: unset;
-
-        padding: 0rem 0.75rem;
-        border-radius: 0.25rem;
-        font-size: 0.9rem;
     } */
+
+    /* halvlätta taggar ;) */
+    .tag {
+        border: 1px solid color-mix(in srgb, var(--foreground-color-regular)50%, transparent 50%);
+        color: var(--foreground-color-loud);
+        background-color: unset;
+    }
+
+
 
 
     .iconButtonGroup {
@@ -203,7 +217,7 @@
 
         /* flex-direction: column; */
         flex-wrap: wrap;
-        gap: 0.5rem 1rem;
+        gap: 0.5rem 0.75rem;
 
         font-size: smaller;
 
@@ -217,7 +231,7 @@
 
 
             .skillicon {
-                height: 1.25rem;
+                height: 1.2rem;
                 /* height: 3rem; */
 
             }

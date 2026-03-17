@@ -26,7 +26,8 @@ export default function ProjectCard({ project }: Props) {
                         <h3 className={`${styles.heading}`}>{project.title}</h3>
                     </div>
                     {(project.projectContext || project.projectForm) && (
-                        <div>
+                        <div className={styles.tagsContainer}>
+
                             {project.projectContext && <span className={`${styles.tag}`}>{project.projectContext}</span>}
                             {project.projectForm && <span className={`${styles.tag}`}>{project.projectForm}</span>}
                             {project.label &&

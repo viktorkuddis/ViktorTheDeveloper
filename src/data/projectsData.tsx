@@ -4,10 +4,11 @@ import type { ProjectsData } from "../types/projectTypes"
 
 export const projectsData: ProjectsData[] = [
     {
-        title: "Examensarbete:",
-        summary: "",
+        title: "Examensarbete: VADSKER? eventplanerare",
+        summary: "Examensarbete där jag utvecklade en webbapp för att koordinera aktiviteter under flerdagarsevenemang.\n Målet är att minska risken för schemakrockar när många personliga agendor möts. \n\n Som användare kan du skapa, och delta i olika evenemang. \n Som arrangör kan du registrera gemensamma gruppaktiviteter.\nSom deltagare kan du registrera egna aktiviteter. \n\nAppen ger deltagare en gemensam överblick över dagens alla  planer, både gemensamma gruppaktiviteter samt individuella. Resultatet blev en mobilanpassad MVP utvecklad med MERN-stack."
+        ,
         deployLink: null,
-        repoLink: null,
+        repoLink: "https://github.com/viktorkuddis/eventplanerare",
         links: [{
             linkTitle: "RAPPORT: Examensarbete, Viktor Magnusson.pdf",
             link: "https://drive.google.com/file/d/1VSWUr6iKGKmwaTQ7XJDYCyHsZF-If8_w/view?usp=sharing"
@@ -15,10 +16,91 @@ export const projectsData: ProjectsData[] = [
         label: ["EXAMENSARBETE"],
         projectForm: "Solo",
         projectContext: null,
-        relatedSkillsUID: null,
-        coverImage: "/images/projectImages/examensarbete/omslag.jpg",
-        images: null,
-        informationTextHTML: undefined
+        relatedSkillsUID: [
+            "F3C5E758-D00A-46F1-95B7-EAF566485F16", //react
+            "39F9E43C-7D3C-4A15-B526-BD0D6EC6D64A", // css
+            "BCC4D2F8-617E-4649-990A-E4FF27345A89", //Javascript
+            "3A13375B-2D72-4DE9-80F7-B506A11A7BD7", //rest
+            "C9DFB7AE-ABDD-4C75-9DB9-153F91DE5F4D",// mongodb
+            "5543F5FF-8301-4F95-8F12-3EB2BD57DAFC", //git
+            "9B38F406-C577-4165-931C-2E6A72EFC233", //jira
+            "8AC56FE3-C8DD-413A-9D5F-D7192A0035B1",// Clerk
+            "2D5175FC-8EE9-49F9-B0E2-D1CF6A13E6D8", //express
+            "ADEE5881-9E84-4F0C-ABCD-6A6EB81CE982", //node
+        ],
+        coverImage: "/images/projectImages/examensarbete/omslag.jpeg",
+        images: [
+            "/images/projectImages/examensarbete/omslag.jpeg",
+            "/images/projectImages/examensarbete/startFilled.jpeg",
+
+            "/images/projectImages/examensarbete/connectToEvent.jpeg",
+            // "/images/projectImages/examensarbete/connectyToEvent2.jpeg",
+            // "/images/projectImages/examensarbete/createEvent1.jpeg",
+            "/images/projectImages/examensarbete/createEvent2.jpeg",
+            // "/images/projectImages/examensarbete/editActivity.jpeg",
+            // "/images/projectImages/examensarbete/feed.jpeg",
+            "/images/projectImages/examensarbete/feedFilled.jpeg",
+            "/images/projectImages/examensarbete/notification.jpeg",
+            "/images/projectImages/examensarbete/rapport.jpeg",
+            // "/images/projectImages/examensarbete/start.jpeg",
+
+        ],
+        informationTextHTML: <>
+            <h3>Eventplanerare
+                <br />- en MVP för att
+                koordinera aktiviteter och egentid under flerdagarsevenemang</h3>
+
+            <p><i>Saxat från rapporten:</i></p>
+            <p>Vid längre flerdagarsevenemang och sammankomster är det inte ovanligt att gästerna kommer
+                långväga ifrån. Exempel på evenemang kan till exempel vara julhelg med tjocka släkten,
+                tredagarsbröllop, gruppresor, kickoffer eller konferenser.
+            </p>
+
+            <p>
+                Ofta saknas en gemensam plats där deltagare kan få en kombinerad överblick över det satta
+                gemensamma schemat i kombination med övriga deltagares egna planer för dagen. Detta kan
+                leda till onödiga personliga schemakrockar eller väntetider då varje deltagare har en egen
+                uppfattning över hur dennes dag kommer att se ut.
+            </p>
+            <p>
+                Syftet med detta examensarbete var att utveckla en MVP <i> (Minimum Viable Product)</i> av en
+                webbapplikation som ska underlätta för deltagarna vid flerdagarsevenemang.
+            </p>
+            <p>
+                Målet är att minska risken för schemakrockar och onödig väntan. Allt för att varje deltagare
+                ska ges möjlighet att få ut det mesta av varje dag.
+            </p>
+            <p>
+                Appen optimeras främst för användning på mobila enheter och är inte tänkt att ersätta andra
+                kalenderappar. Inte heller är det en schemaläggningsapp. Dess huvudsakliga uppgift är att på ett
+                enkelt sätt tydliggöra alla deltagares olika planer för dagen i ett överskådligt flöde
+                tillsammans med de fasta hållpunkterna.
+
+            </p>
+            <p>
+                <b>
+                    Appens huvudsakliga uppgift är att på ett
+                    enkelt sätt tydliggöra alla deltagares olika planer för dagen i ett överskådligt flöde
+                    tillsammans med de fasta hållpunkterna.
+                </b>
+            </p>
+
+            <h4><b>Sammanställning av appens funktionalitet (MVP): </b></h4>
+            <ul>
+                <li> Skapa konto och logga in via Clerk</li>
+                <li> För att använda appen krävs att man är en inloggad användare.</li>
+                <li> Väl inloggad kan man se listor av egna, samt andras evenemang som man deltar i.</li>
+                <li> Skapa och anslut till evenemang direkt från startsidan.</li>
+                <li> Varje evenemang tilldelas ett anslutnings-ID som används för att söka efter och skicka
+                    förfrågningar om att delta i evenemanget.</li>
+                <li> Appen tar emot notiser med jämna mellanrum om nya anslutningsförfrågningar samt
+                    godkända anslutningsförfrågningar.</li>
+                <li> Gemensamma aktiviteter och individuellt planerade aktiviteter i ett kronologiskt flöde.</li>
+                <li> Som värd för ett evenemang ges du möjlighet att addera både gemensamma aktiviteter
+                    till flödet, samt individuella aktiviteter. Som gäst tillåts du endast skapa individuella
+                    aktiviteter.</li>
+            </ul>
+        </>
     },
     {
         title: "Redax Solo",
@@ -76,7 +158,7 @@ export const projectsData: ProjectsData[] = [
         links: null,
         label: ["Vilande (W.i.p.)"],
         projectForm: "Solo",
-        projectContext: null,
+        projectContext: "Sidoprojekt",
         relatedSkillsUID: [
             "F3C5E758-D00A-46F1-95B7-EAF566485F16", //react
             "39F9E43C-7D3C-4A15-B526-BD0D6EC6D64A", // css

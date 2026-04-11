@@ -23,12 +23,12 @@ export const projectsData: ProjectsData[] = [
         ],
         coverImage: "/images/projectImages/portfolio/derfarenhet.jpeg",
         images: [
+            "/images/projectImages/portfolio/mmhero.jpeg",
             "/images/projectImages/portfolio/dhero.jpeg",
+            "/images/projectImages/portfolio/mmerfarenhet.jpeg",
             "/images/projectImages/portfolio/derfarenhet.jpeg",
+            "/images/projectImages/portfolio/mmproject.jpeg",
             "/images/projectImages/portfolio/dproject.jpeg",
-            "/images/projectImages/portfolio/mhero.jpeg",
-            "/images/projectImages/portfolio/merfarenhet.jpeg",
-            "/images/projectImages/portfolio/mproject.jpeg",
 
         ],
         informationTextHTML: null

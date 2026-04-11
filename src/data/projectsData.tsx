@@ -4,6 +4,36 @@ import type { ProjectsData } from "../types/projectTypes"
 
 export const projectsData: ProjectsData[] = [
     {
+        title: "Denna portfolio",
+
+        summary: "Kombinerad CV och portfolio där jag sammanställt vem jag är och vad jag kan. Enkelt och tillgängligt för rekryterare och framtida arbetsgivare.\n\nResponsiv. Mobile first.\nText och data hämtas dynamiskt.",
+
+        deployLink: null,
+        repoLink: "https://github.com/viktorkuddis/ViktorTheDeveloper",
+        links: null,
+        label: ["Work in progress"],
+        projectForm: "Solo",
+        projectContext: null,
+        relatedSkillsUID: [
+            "F3C5E758-D00A-46F1-95B7-EAF566485F16", //react
+            "39F9E43C-7D3C-4A15-B526-BD0D6EC6D64A", // css
+            "BCC4D2F8-617E-4649-990A-E4FF27345A89", //Javascript
+            "5543F5FF-8301-4F95-8F12-3EB2BD57DAFC", //git
+            "95A9AE22-CD2F-4B48-B173-CB51D348BE7C", // base UI
+        ],
+        coverImage: "/images/projectImages/portfolio/derfarenhet.jpeg",
+        images: [
+            "/images/projectImages/portfolio/mmhero.jpeg",
+            "/images/projectImages/portfolio/dhero.jpeg",
+            "/images/projectImages/portfolio/mmerfarenhet.jpeg",
+            "/images/projectImages/portfolio/derfarenhet.jpeg",
+            "/images/projectImages/portfolio/mmproject.jpeg",
+            "/images/projectImages/portfolio/dproject.jpeg",
+
+        ],
+        informationTextHTML: null
+    },
+    {
         title: "Examensarbete: VADSKER? eventplanerare",
         summary: "Examensarbete där jag utvecklade en webbapp för att koordinera aktiviteter under flerdagarsevenemang.\n Målet är att minska risken för schemakrockar när många personliga agendor möts. \n\n Som användare kan du skapa, och delta i olika evenemang. \n Som arrangör kan du registrera gemensamma gruppaktiviteter.\nSom deltagare kan du registrera egna aktiviteter. \n\nAppen ger deltagare en gemensam överblick över dagens alla  planer, både gemensamma gruppaktiviteter samt individuella. Resultatet blev en mobilanpassad MVP utvecklad med MERN-stack."
         ,

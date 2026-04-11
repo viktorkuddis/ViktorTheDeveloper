@@ -4,6 +4,20 @@ import type { ProjectsData } from "../types/projectTypes"
 
 export const projectsData: ProjectsData[] = [
     {
+        title: "Denna portfolio",
+        summary: "Kompinerad CV och portfolio där sam sammanställt vem jag är. Enkelt och tillgängligt för rekryterare och kommande arbetsgivare.",
+        deployLink: null,
+        repoLink: "https://github.com/viktorkuddis/ViktorTheDeveloper",
+        links: null,
+        label: ["Work in progress"],
+        projectForm: "Solo",
+        projectContext: null,
+        relatedSkillsUID: null,
+        coverImage: null,
+        images: null,
+        informationTextHTML: undefined
+    },
+    {
         title: "Examensarbete: VADSKER? eventplanerare",
         summary: "Examensarbete där jag utvecklade en webbapp för att koordinera aktiviteter under flerdagarsevenemang.\n Målet är att minska risken för schemakrockar när många personliga agendor möts. \n\n Som användare kan du skapa, och delta i olika evenemang. \n Som arrangör kan du registrera gemensamma gruppaktiviteter.\nSom deltagare kan du registrera egna aktiviteter. \n\nAppen ger deltagare en gemensam överblick över dagens alla  planer, både gemensamma gruppaktiviteter samt individuella. Resultatet blev en mobilanpassad MVP utvecklad med MERN-stack."
         ,

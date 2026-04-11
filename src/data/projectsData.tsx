@@ -5,17 +5,31 @@ import type { ProjectsData } from "../types/projectTypes"
 export const projectsData: ProjectsData[] = [
     {
         title: "Denna portfolio",
-        summary: "Kompinerad CV och portfolio där sam sammanställt vem jag är. Enkelt och tillgängligt för rekryterare och kommande arbetsgivare.",
+        summary: "Kombinerad CV och portfolio där sam sammanställt vem jag är och vad jag kan. Enkelt och tillgängligt för rekryterare och kommande arbetsgivare. \n\n Responsiv. Mobile first. \n Text/data hämtas dynamiskt",
         deployLink: null,
         repoLink: "https://github.com/viktorkuddis/ViktorTheDeveloper",
         links: null,
         label: ["Work in progress"],
         projectForm: "Solo",
         projectContext: null,
-        relatedSkillsUID: null,
-        coverImage: null,
-        images: null,
-        informationTextHTML: undefined
+        relatedSkillsUID: [
+            "F3C5E758-D00A-46F1-95B7-EAF566485F16", //react
+            "39F9E43C-7D3C-4A15-B526-BD0D6EC6D64A", // css
+            "BCC4D2F8-617E-4649-990A-E4FF27345A89", //Javascript
+            "5543F5FF-8301-4F95-8F12-3EB2BD57DAFC", //git
+            // base UI
+        ],
+        coverImage: "/images/projectImages/portfolio/derfarenhet.jpeg",
+        images: [
+            "/images/projectImages/portfolio/dhero.jpeg",
+            "/images/projectImages/portfolio/derfarenhet.jpeg",
+            "/images/projectImages/portfolio/dproject.jpeg",
+            "/images/projectImages/portfolio/mhero.jpeg",
+            "/images/projectImages/portfolio/merfarenhet.jpeg",
+            "/images/projectImages/portfolio/mproject.jpeg",
+
+        ],
+        informationTextHTML: null
     },
     {
         title: "Examensarbete: VADSKER? eventplanerare",
